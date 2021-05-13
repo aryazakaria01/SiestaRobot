@@ -1,6 +1,6 @@
 import os
 
-from DaisyX.function.pluginhelpers import runcmd
+from Siesta.function.pluginhelpers import runcmd
 from telethon.tl.types import *
 
 
