@@ -4,10 +4,6 @@ from random import randint
 from time import time
 
 import aiohttp
-from Siesta import BOT_USERNAME, OWNER_ID
-from Siesta.function.pluginhelpers import convert_seconds_to_minutes as time_convert
-from Siesta.function.pluginhelpers import fetch
-from Siesta.services.pyrogram import pbot
 from googletrans import Translator
 from motor import version as mongover
 from pykeyboard import InlineKeyboard
@@ -21,6 +17,11 @@ from pyrogram.types import (
 )
 from Python_ARQ import ARQ
 from search_engine_parser import GoogleSearch
+
+from Siesta import BOT_USERNAME, OWNER_ID
+from Siesta.function.pluginhelpers import convert_seconds_to_minutes as time_convert
+from Siesta.function.pluginhelpers import fetch
+from Siesta.services.pyrogram import pbot
 
 SUDOERS = OWNER_ID
 ARQ_API = "http://35.240.133.234:8000"
