@@ -16,7 +16,7 @@
 
 import threading
 
-from DaisyX.services.sql import BASE, SESSION
+from Siesta.services.sql import BASE, SESSION
 from sqlalchemy import Column, String, UnicodeText
 
 
