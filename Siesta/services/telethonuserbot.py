@@ -15,7 +15,7 @@
 
 import sys
 
-from DaisyX.config import get_int_key, get_str_key
+from Siesta.config import get_int_key, get_str_key
 from telethon import TelegramClient
 from telethon.sessions import StringSession
 
