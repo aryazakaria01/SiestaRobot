@@ -18,11 +18,11 @@ from importlib import import_module
 
 from aiogram import types
 from aiogram.dispatcher.handler import SkipHandler
-from DaisyX import BOT_USERNAME, dp
-from DaisyX.config import get_bool_key
-from DaisyX.modules.error import parse_update
-from DaisyX.utils.filters import ALL_FILTERS
-from DaisyX.utils.logger import log
+from Siesta import BOT_USERNAME, dp
+from Siesta.config import get_bool_key
+from Siesta.modules.error import parse_update
+from Siesta.utils.filters import ALL_FILTERS
+from Siesta.utils.logger import log
 from sentry_sdk import configure_scope
 
 DEBUG_MODE = get_bool_key("DEBUG_MODE")
@@ -37,7 +37,7 @@ COMMANDS_ALIASES = {}
 log.info("Filters to load: %s", str(ALL_FILTERS))
 for module_name in ALL_FILTERS:
     log.debug("Importing " + module_name)
-    imported_module = import_module("DaisyX.utils.filters." + module_name)
+    imported_module = import_module("Siesta.utils.filters." + module_name)
 log.info("Filters loaded!")
 
 
