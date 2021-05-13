@@ -2,8 +2,8 @@ import inspect
 import re
 from pathlib import Path
 
-from DaisyX.services.mongo import mongodb as db
-from DaisyX.services.telethon import tbot
+from Siesta.services.mongo import mongodb as db
+from Siesta.services.telethon import tbot
 from telethon import events
 
 gbanned = db.gban
