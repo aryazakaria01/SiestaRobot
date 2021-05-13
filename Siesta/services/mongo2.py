@@ -1,7 +1,7 @@
 # Support Dual Mongo DB now
 # For free users
 
-from DaisyX.config import get_str_key
+from Siesta.config import get_str_key
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 
 MONGO2 = get_str_key("MONGO_URI_2", None)
@@ -10,4 +10,4 @@ if MONGO2 == None:
     MONGO2 = MONGO
 
 mongo_client = MongoClient(MONGO2)
-db = mongo_client.daisy
+db = mongo_client.siesta
