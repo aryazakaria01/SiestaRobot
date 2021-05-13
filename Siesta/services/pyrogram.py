@@ -16,7 +16,7 @@
 import logging
 
 # from pyromod import listen
-from DaisyX.config import get_int_key, get_str_key
+from Siesta.config import get_int_key, get_str_key
 from pyrogram import Client
 
 TOKEN = get_str_key("TOKEN", required=True)
