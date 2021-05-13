@@ -18,9 +18,9 @@ from dataclasses import dataclass
 from aiogram.dispatcher.filters import Filter
 from aiogram.types.callback_query import CallbackQuery
 from aiogram.utils.exceptions import BadRequest
-from DaisyX import BOT_ID, dp
-from DaisyX.modules.utils.language import get_strings
-from DaisyX.modules.utils.user_details import check_admin_rights
+from Siesta import BOT_ID, dp
+from Siesta.modules.utils.language import get_strings
+from Siesta.modules.utils.user_details import check_admin_rights
 
 
 @dataclass
