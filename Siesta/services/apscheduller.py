@@ -16,8 +16,8 @@
 from apscheduler.executors.asyncio import AsyncIOExecutor
 from apscheduler.jobstores.redis import RedisJobStore
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from DaisyX.config import get_str_key
-from DaisyX.utils.logger import log
+from Siesta.config import get_str_key
+from Siesta.utils.logger import log
 from pytz import utc
 
 DEFAULT = "default"
