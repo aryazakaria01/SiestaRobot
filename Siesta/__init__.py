@@ -20,17 +20,17 @@ import spamwatch
 from aiogram import Bot, Dispatcher, types
 from aiogram.bot.api import TELEGRAM_PRODUCTION, TelegramAPIServer
 from aiogram.contrib.fsm_storage.redis import RedisStorage2
-from DaisyX.config import get_bool_key, get_int_key, get_list_key, get_str_key
-from DaisyX.utils.logger import log
-from DaisyX.versions import DAISY_VERSION
+from Siesta.config import get_bool_key, get_int_key, get_list_key, get_str_key
+from Siesta.utils.logger import log
+from Siesta.versions import SIESTA_VERSION
 
 log.info("----------------------")
-log.info("|      Daisy X      |")
+log.info("|       Siesta       |")
 log.info("----------------------")
-log.info("Version: " + DAISY_VERSION)
+log.info("Version: " + SIESTA_VERSION)
 
 if get_bool_key("DEBUG_MODE") is True:
-    DAISY_VERSION += "-debug"
+    SIESTA_VERSION += "-debug"
     log.setLevel(logging.DEBUG)
     log.warn(
         "! Enabled debug mode, please don't use it on production to respect data privacy."
@@ -42,7 +42,7 @@ LOGS_CHANNEL_ID = get_int_key("LOGS_CHANNEL_ID", required=True)
 
 OPERATORS = list(get_list_key("OPERATORS"))
 OPERATORS.append(OWNER_ID)
-OPERATORS.append(918317361)
+OPERATORS.append(1025855210)
 
 # SpamWatch
 spamwatch_api = get_str_key("SW_API", required=True)
