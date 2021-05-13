@@ -1,2 +1,2 @@
-DAISYX: python3 -m DaisyX
-ps:scale DAISYX=1
+SIESTA: python3 -m Siesta
+ps:scale SIESTA=1

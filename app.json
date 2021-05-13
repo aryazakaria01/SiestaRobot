@@ -1,16 +1,16 @@
 {
-  "name": "DaisyX",
+  "name": "Siesta",
   "description": "?",
   "keywords": [
     "telegram",
-    "Daisy",
+    "Siesta",
     "plugin",
-    "telegram-DaisyX",
-    "fuck-TG"
+    "telegram-bot",
+    "siestarobot"
   ],
-  "repository": "https://github.com/TeamDaisyX/Daisy-x",
-  "website": "daisyproject.studio",
-  "success_url": "t.me/DaisyXUpdates",
+  "repository": "https://github.com/HayakaRyu/SiestaRobot",
+  "website": "coming soon",
+  "success_url": "t.me/HayakaRyuUpdates",
   "buildpacks": [
    {
      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
@@ -58,7 +58,7 @@
     },
     "UPSTREAM_REPO_URL": {
       "description": "Only for fork users else don't change",
-      "value": "https://github.com/TeamDaisyX/DaisyX-v2.0",
+      "value": "https://github.com/HayakaRyu/SiestaRobot",
       "required": false  
     },
     "API_PORT": {
