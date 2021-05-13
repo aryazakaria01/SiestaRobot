@@ -3,7 +3,7 @@
 import threading
 import time
 
-from DaisyX.services.sql import BASE, SESSION
+from Siesta.services.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 
 
