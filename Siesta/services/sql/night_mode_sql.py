@@ -11,8 +11,9 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from Siesta.services.sql import BASE, SESSION
 from sqlalchemy import Column, String
+
+from Siesta.services.sql import BASE, SESSION
 
 
 class Nightmode(BASE):

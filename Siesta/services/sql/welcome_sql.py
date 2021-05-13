@@ -1,5 +1,6 @@
-from Siesta.services.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, String, UnicodeText
+
+from Siesta.services.sql import BASE, SESSION
 
 
 class Goodbye(BASE):

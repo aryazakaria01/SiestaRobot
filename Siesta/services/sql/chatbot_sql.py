@@ -1,7 +1,8 @@
 import threading
 
-from Siesta.services.sql import BASE, SESSION
 from sqlalchemy import Column, String
+
+from Siesta.services.sql import BASE, SESSION
 
 
 class ChatbotChats(BASE):

@@ -1,5 +1,6 @@
-from Siesta.services.sql import BASE, SESSION
 from sqlalchemy import Column, LargeBinary, Numeric, String, UnicodeText
+
+from Siesta.services.sql import BASE, SESSION
 
 
 class Filters(BASE):

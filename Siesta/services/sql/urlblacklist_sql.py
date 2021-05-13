@@ -16,8 +16,9 @@
 
 import threading
 
-from Siesta.services.sql import BASE, SESSION
 from sqlalchemy import Column, String, UnicodeText
+
+from Siesta.services.sql import BASE, SESSION
 
 
 class URLBlackListFilters(BASE):

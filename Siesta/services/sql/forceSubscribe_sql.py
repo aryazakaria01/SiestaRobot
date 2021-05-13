@@ -1,5 +1,6 @@
-from Siesta.services.sql import BASE, SESSION
 from sqlalchemy import Column, Numeric, String
+
+from Siesta.services.sql import BASE, SESSION
 
 
 class forceSubscribe(BASE):

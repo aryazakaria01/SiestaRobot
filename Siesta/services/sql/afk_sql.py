@@ -3,8 +3,9 @@
 import threading
 import time
 
-from Siesta.services.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
+
+from Siesta.services.sql import BASE, SESSION
 
 
 class AFK(BASE):
