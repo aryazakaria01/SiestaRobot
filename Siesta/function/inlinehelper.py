@@ -4,10 +4,10 @@ from random import randint
 from time import time
 
 import aiohttp
-from DaisyX import BOT_USERNAME, OWNER_ID
-from DaisyX.function.pluginhelpers import convert_seconds_to_minutes as time_convert
-from DaisyX.function.pluginhelpers import fetch
-from DaisyX.services.pyrogram import pbot
+from Siesta import BOT_USERNAME, OWNER_ID
+from Siesta.function.pluginhelpers import convert_seconds_to_minutes as time_convert
+from Siesta.function.pluginhelpers import fetch
+from Siesta.services.pyrogram import pbot
 from googletrans import Translator
 from motor import version as mongover
 from pykeyboard import InlineKeyboard
@@ -72,25 +72,25 @@ async def alive_function(answers):
     bot_state = "Dead" if not await app.get_me() else "Alive"
     # ubot_state = 'Dead' if not await app2.get_me() else 'Alive'
     buttons.add(
-        InlineKeyboardButton("Main Bot", url="https://t.me/DaisyXbot"),
+        InlineKeyboardButton("Main Bot", url="https://t.me/SiestaRobot"),
         InlineKeyboardButton("Go Inline!", switch_inline_query_current_chat=""),
     )
 
     msg = f"""
-**[DaisyX✨](https://github.com/TeamDaisyX):**
+**[Siesta✨](https://github.com/HayakaRyu/SiestaRobot):**
 **MainBot:** `{bot_state}`
 **UserBot:** `Alive`
 **Python:** `3.9`
 **Pyrogram:** `{pyrover}`
 **MongoDB:** `{mongover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/daisyxhelper)
+**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/SiestaMusic)
 """
     answers.append(
         InlineQueryResultArticle(
             title="Alive",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/debc179305d2e1f140636.jpg",
+            thumb_url="https://telegra.ph/file/3881b6443128089617455.jpg",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
             ),
