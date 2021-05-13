@@ -2,8 +2,8 @@ import sys
 import traceback
 from functools import wraps
 
-from DaisyX import SUPPORT_CHAT
-from DaisyX.services.pyrogram import pbot
+from Siesta import SUPPORT_CHAT
+from Siesta.services.pyrogram import pbot
 
 
 def split_limits(text):
