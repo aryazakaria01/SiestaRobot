@@ -19,11 +19,10 @@
 import asyncio
 import datetime
 
-from telethon.tl import functions, types
-
 from DaisyX.services.events import register
 from DaisyX.services.telethon import tbot
 from DaisyX.services.telethonuserbot import ubot
+from telethon.tl import functions, types
 
 
 async def is_register_admin(chat, user):

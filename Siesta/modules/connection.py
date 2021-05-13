@@ -25,7 +25,6 @@ from aiogram.types.inline_keyboard import InlineKeyboardButton, InlineKeyboardMa
 from aiogram.utils.callback_data import CallbackData
 from aiogram.utils.deep_linking import get_start_link
 from aiogram.utils.exceptions import BotBlocked, CantInitiateConversation
-
 from DaisyX import bot
 from DaisyX.decorator import register
 from DaisyX.services.mongo import db

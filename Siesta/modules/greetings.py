@@ -39,8 +39,6 @@ from aiogram.utils.exceptions import (
 from apscheduler.jobstores.base import JobLookupError
 from babel.dates import format_timedelta
 from captcha.image import ImageCaptcha
-from telethon.tl.custom import Button
-
 from DaisyX import BOT_ID, BOT_USERNAME, LOGS_CHANNEL_ID, bot, dp
 from DaisyX.config import get_str_key
 from DaisyX.decorator import register
@@ -49,6 +47,7 @@ from DaisyX.services.mongo import db
 from DaisyX.services.redis import redis
 from DaisyX.services.telethon import tbot
 from DaisyX.stuff.fonts import ALL_FONTS
+from telethon.tl.custom import Button
 
 from ..utils.cached import cached
 from .utils.connections import chat_connection

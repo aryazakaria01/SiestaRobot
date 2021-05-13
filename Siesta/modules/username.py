@@ -16,12 +16,11 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from telethon.errors.rpcerrorlist import YouBlockedUserError
-from telethon.tl import functions, types
-
 from DaisyX.services.events import register as Daisy
 from DaisyX.services.telethon import tbot
 from DaisyX.services.telethonuserbot import ubot
+from telethon.errors.rpcerrorlist import YouBlockedUserError
+from telethon.tl import functions, types
 
 
 async def is_register_admin(chat, user):

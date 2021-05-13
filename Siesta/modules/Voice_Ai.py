@@ -23,14 +23,13 @@ import os
 import subprocess
 
 import requests
+from DaisyX.config import get_str_key
+from DaisyX.services.events import register
+from DaisyX.services.telethon import tbot
 from gtts import gTTS, gTTSError
 from requests import get
 from telethon.tl import functions, types
 from telethon.tl.types import *
-
-from DaisyX.config import get_str_key
-from DaisyX.services.events import register
-from DaisyX.services.telethon import tbot
 
 IBM_WATSON_CRED_PASSWORD = get_str_key("IBM_WATSON_CRED_PASSWORD", None)
 IBM_WATSON_CRED_URL = get_str_key("IBM_WATSON_CRED_URL", None)

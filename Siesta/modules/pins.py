@@ -14,7 +14,6 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from aiogram.utils.exceptions import BadRequest
-
 from DaisyX import bot
 from DaisyX.decorator import register
 

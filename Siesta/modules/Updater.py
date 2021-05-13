@@ -17,13 +17,12 @@ import sys
 from os import environ, execle, path, remove
 
 import heroku3
-from git import Repo
-from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
-
 from DaisyX import OWNER_ID
 from DaisyX.config import get_str_key
 from DaisyX.services.events import register
 from DaisyX.services.telethon import tbot as update
+from git import Repo
+from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 
 HEROKU_APP_NAME = get_str_key("HEROKU_APP_NAME", None)
 HEROKU_API_KEY = get_str_key("HEROKU_API_KEY", None)

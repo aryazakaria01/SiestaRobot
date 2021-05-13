@@ -1,6 +1,5 @@
-from sqlalchemy import Column, Numeric, String
-
 from DaisyX.services.sql import BASE, SESSION
+from sqlalchemy import Column, Numeric, String
 
 
 class forceSubscribe(BASE):

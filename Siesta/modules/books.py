@@ -23,9 +23,8 @@ import re
 
 import requests
 from bs4 import BeautifulSoup
-from telethon import events
-
 from DaisyX.services.telethon import tbot
+from telethon import events
 
 
 @tbot.on(events.NewMessage(pattern="^/book (.*)"))

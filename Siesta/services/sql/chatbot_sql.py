@@ -1,8 +1,7 @@
 import threading
 
-from sqlalchemy import Column, String
-
 from DaisyX.services.sql import BASE, SESSION
+from sqlalchemy import Column, String
 
 
 class ChatbotChats(BASE):

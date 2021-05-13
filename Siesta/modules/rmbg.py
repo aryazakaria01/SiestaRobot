@@ -22,12 +22,11 @@ import os
 from datetime import datetime
 
 import requests
-from telethon import types
-from telethon.tl import functions
-
 from DaisyX.config import get_str_key
 from DaisyX.services.events import register
 from DaisyX.services.telethon import tbot
+from telethon import types
+from telethon.tl import functions
 
 REM_BG_API_KEY = get_str_key("REM_BG_API_KEY", required=False)
 TEMP_DOWNLOAD_DIRECTORY = "./"

@@ -17,7 +17,6 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from countryinfo import CountryInfo
-
 from DaisyX.services.events import register
 from DaisyX.services.telethon import tbot as borg
 

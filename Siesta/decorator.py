@@ -18,13 +18,12 @@ from importlib import import_module
 
 from aiogram import types
 from aiogram.dispatcher.handler import SkipHandler
-from sentry_sdk import configure_scope
-
 from DaisyX import BOT_USERNAME, dp
 from DaisyX.config import get_bool_key
 from DaisyX.modules.error import parse_update
 from DaisyX.utils.filters import ALL_FILTERS
 from DaisyX.utils.logger import log
+from sentry_sdk import configure_scope
 
 DEBUG_MODE = get_bool_key("DEBUG_MODE")
 ALLOW_F_COMMANDS = get_bool_key("ALLOW_FORWARDS_COMMANDS")

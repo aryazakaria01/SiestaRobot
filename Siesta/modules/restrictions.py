@@ -23,7 +23,6 @@ from contextlib import suppress
 
 from aiogram.utils.exceptions import MessageNotModified
 from babel.dates import format_timedelta
-
 from DaisyX import BOT_ID, bot
 from DaisyX.decorator import register
 from DaisyX.services.redis import redis

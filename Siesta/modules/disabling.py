@@ -18,7 +18,6 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from aiogram.types.inline_keyboard import InlineKeyboardButton, InlineKeyboardMarkup
-
 from DaisyX.decorator import COMMANDS_ALIASES, register
 from DaisyX.services.mongo import db
 

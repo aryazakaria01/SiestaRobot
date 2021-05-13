@@ -1,6 +1,5 @@
-from sqlalchemy import Column, LargeBinary, Numeric, String, UnicodeText
-
 from DaisyX.services.sql import BASE, SESSION
+from sqlalchemy import Column, LargeBinary, Numeric, String, UnicodeText
 
 
 class Filters(BASE):

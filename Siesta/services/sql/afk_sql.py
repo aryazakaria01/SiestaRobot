@@ -3,9 +3,8 @@
 import threading
 import time
 
-from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
-
 from DaisyX.services.sql import BASE, SESSION
+from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 
 
 class AFK(BASE):

@@ -17,9 +17,8 @@ import os
 import sys
 
 import yaml
-from envparse import env
-
 from DaisyX.utils.logger import log
+from envparse import env
 
 DEFAULTS = {
     "LOAD_MODULES": True,

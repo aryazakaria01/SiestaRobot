@@ -14,10 +14,9 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import sentry_sdk
-from sentry_sdk.integrations.redis import RedisIntegration
-
 from DaisyX.config import get_str_key
 from DaisyX.utils.logger import log
+from sentry_sdk.integrations.redis import RedisIntegration
 
 log.info("Starting sentry.io integraion...")
 

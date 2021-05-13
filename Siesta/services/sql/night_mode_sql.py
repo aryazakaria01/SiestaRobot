@@ -11,9 +11,8 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from sqlalchemy import Column, String
-
 from DaisyX.services.sql import BASE, SESSION
+from sqlalchemy import Column, String
 
 
 class Nightmode(BASE):

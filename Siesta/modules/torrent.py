@@ -17,13 +17,12 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import requests
+from DaisyX.services.mongo import mongodb as db
+from DaisyX.services.telethon import tbot
 from telethon import *
 from telethon import events
 from telethon.tl import functions, types
 from telethon.tl.types import *
-
-from DaisyX.services.mongo import mongodb as db
-from DaisyX.services.telethon import tbot
 
 approved_users = db.approve
 

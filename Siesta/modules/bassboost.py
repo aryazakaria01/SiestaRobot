@@ -7,12 +7,11 @@ import math
 import os
 
 import numpy as np
-from pydub import AudioSegment
-from telethon import events
-
 from DaisyX import BOT_ID, OWNER_ID
 from DaisyX.function.telethonbasics import is_admin
 from DaisyX.services.telethon import tbot
+from pydub import AudioSegment
+from telethon import events
 
 TMP_DOWNLOAD_DIRECTORY = "./"
 

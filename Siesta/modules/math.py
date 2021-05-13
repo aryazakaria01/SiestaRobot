@@ -16,7 +16,6 @@ import json
 import math
 
 import requests
-
 from DaisyX.decorator import register
 
 from .utils.disable import disableable_dec

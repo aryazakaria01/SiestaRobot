@@ -20,11 +20,10 @@ import os
 from asyncio import sleep
 from datetime import datetime
 
-from requests import get, post
-from telethon.tl import functions, types
-
 from DaisyX.services.events import register
 from DaisyX.services.telethon import tbot as client
+from requests import get, post
+from telethon.tl import functions, types
 
 
 def progress(current, total):

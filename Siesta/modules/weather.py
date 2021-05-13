@@ -20,10 +20,9 @@ import io
 import time
 
 import aiohttp
+from DaisyX.config import get_str_key
 from telethon.tl import functions, types
 from telethon.tl.types import *
-
-from DaisyX.config import get_str_key
 
 OPENWEATHERMAP_ID = get_str_key("OPENWEATHERMAP_ID", "")
 from DaisyX.services.events import register

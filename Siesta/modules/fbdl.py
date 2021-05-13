@@ -16,10 +16,9 @@ import re
 from datetime import datetime
 
 import requests
-from telethon import events
-
 from DaisyX.function.telethonbasics import is_admin
 from DaisyX.services.telethon import tbot
+from telethon import events
 
 
 def main(url, filename):

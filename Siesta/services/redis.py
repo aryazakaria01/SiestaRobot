@@ -16,7 +16,6 @@
 import sys
 
 import redis as redis_lib
-
 from DaisyX import log
 from DaisyX.config import get_str_key
 
