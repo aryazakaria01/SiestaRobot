@@ -15,9 +15,10 @@
 
 import sys
 
-from Siesta.config import get_int_key, get_str_key
 from telethon import TelegramClient
 from telethon.sessions import StringSession
+
+from Siesta.config import get_int_key, get_str_key
 
 STRING_SESSION = get_str_key("STRING_SESSION", required=True)
 API_ID = get_int_key("APP_ID", required=True)

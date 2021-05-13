@@ -2,9 +2,10 @@ import inspect
 import re
 from pathlib import Path
 
+from telethon import events
+
 from Siesta.services.mongo import mongodb as db
 from Siesta.services.telethon import tbot
-from telethon import events
 
 gbanned = db.gban
 CMD_LIST = {}

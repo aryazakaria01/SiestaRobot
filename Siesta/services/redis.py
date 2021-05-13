@@ -16,6 +16,7 @@
 import sys
 
 import redis as redis_lib
+
 from Siesta import log
 from Siesta.config import get_str_key
 
