@@ -15,11 +15,11 @@
 
 from aiogram import types
 from aiogram.dispatcher.filters import BoundFilter
-from DaisyX import OPERATORS, dp
-from DaisyX.config import get_int_key
-from DaisyX.modules.utils.language import get_strings_dec
-from DaisyX.modules.utils.user_details import is_user_admin
-from DaisyX.services.mongo import mongodb
+from Siesta import OPERATORS, dp
+from Siesta.config import get_int_key
+from Siesta.modules.utils.language import get_strings_dec
+from Siesta.modules.utils.user_details import is_user_admin
+from Siesta.services.mongo import mongodb
 
 
 class IsAdmin(BoundFilter):
