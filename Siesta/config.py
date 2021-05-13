@@ -17,8 +17,9 @@ import os
 import sys
 
 import yaml
-from Siesta.utils.logger import log
 from envparse import env
+
+from Siesta.utils.logger import log
 
 DEFAULTS = {
     "LOAD_MODULES": True,
