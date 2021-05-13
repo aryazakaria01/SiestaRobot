@@ -18,12 +18,13 @@ from importlib import import_module
 
 from aiogram import types
 from aiogram.dispatcher.handler import SkipHandler
+from sentry_sdk import configure_scope
+
 from Siesta import BOT_USERNAME, dp
 from Siesta.config import get_bool_key
 from Siesta.modules.error import parse_update
 from Siesta.utils.filters import ALL_FILTERS
 from Siesta.utils.logger import log
-from sentry_sdk import configure_scope
 
 DEBUG_MODE = get_bool_key("DEBUG_MODE")
 ALLOW_F_COMMANDS = get_bool_key("ALLOW_FORWARDS_COMMANDS")
