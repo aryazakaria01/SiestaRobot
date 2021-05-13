@@ -8,8 +8,8 @@ from functools import wraps
 from typing import Callable, Coroutine, Dict, List, Tuple, Union
 
 import aiohttp
-from DaisyX import OWNER_ID, SUPPORT_CHAT
-from DaisyX.services.pyrogram import pbot
+from Siesta import OWNER_ID, SUPPORT_CHAT
+from Siesta.services.pyrogram import pbot
 from PIL import Image
 from pyrogram import Client
 from pyrogram.errors import FloodWait, MessageNotModified
