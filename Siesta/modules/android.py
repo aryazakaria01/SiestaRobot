@@ -23,8 +23,8 @@ import httpx
 import rapidjson as json
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from bs4 import BeautifulSoup
-from DaisyX import decorator
-from DaisyX.decorator import register
+from Siesta import decorator
+from Siesta.decorator import register
 
 from .utils.android import GetDevice
 from .utils.disable import disableable_dec
