@@ -18,15 +18,15 @@
 
 import asyncio
 
-from DaisyX import BOT_ID
-from DaisyX.db.mongo_helpers.lockurl import add_chat, get_session, remove_chat
-from DaisyX.function.pluginhelpers import (
+from Siesta import BOT_ID
+from Siesta.db.mongo_helpers.lockurl import add_chat, get_session, remove_chat
+from Siesta.function.pluginhelpers import (
     admins_only,
     edit_or_reply,
     get_url,
     member_permissions,
 )
-from DaisyX.services.pyrogram import pbot
+from Siesta.services.pyrogram import pbot
 from pyrogram import filters
 
 
@@ -35,7 +35,7 @@ from pyrogram import filters
 )
 @admins_only
 async def hmm(_, message):
-    global daisy_chats
+    global siesta_chats
     if not "can_change_info" in (
         await member_permissions(message.chat.id, message.from_user.id)
     ):
