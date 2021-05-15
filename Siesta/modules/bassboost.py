@@ -7,11 +7,12 @@ import math
 import os
 
 import numpy as np
+from pydub import AudioSegment
+from telethon import events
+
 from Siesta import BOT_ID, OWNER_ID
 from Siesta.function.telethonbasics import is_admin
 from Siesta.services.telethon import tbot
-from pydub import AudioSegment
-from telethon import events
 
 TMP_DOWNLOAD_DIRECTORY = "./"
 
