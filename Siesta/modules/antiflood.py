@@ -31,6 +31,7 @@ from aiogram.types.inline_keyboard import InlineKeyboardButton
 from aiogram.types.message import ContentType, Message
 from aiogram.utils.callback_data import CallbackData
 from babel.dates import format_timedelta
+
 from Siesta import dp
 from Siesta.decorator import register
 from Siesta.modules.utils.connections import chat_connection
