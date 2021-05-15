@@ -23,11 +23,11 @@ import re
 import better_profanity
 import emoji
 from better_profanity import profanity
-from DaisyX import BOT_ID
-from DaisyX.function.telethonbasics import is_admin
-from DaisyX.services.events import register
-from DaisyX.services.mongo import mongodb as db
-from DaisyX.services.telethon import tbot
+from Siesta import BOT_ID
+from Siesta.function.telethonbasics import is_admin
+from Siesta.services.events import register
+from Siesta.services.mongo import mongodb as db
+from Siesta.services.telethon import tbot
 from google_trans_new import google_translator
 from telethon import events
 from telethon.tl.types import ChatBannedRights
