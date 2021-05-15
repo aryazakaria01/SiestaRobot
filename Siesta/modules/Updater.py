@@ -17,10 +17,10 @@ import sys
 from os import environ, execle, path, remove
 
 import heroku3
-from DaisyX import OWNER_ID
-from DaisyX.config import get_str_key
-from DaisyX.services.events import register
-from DaisyX.services.telethon import tbot as update
+from Siesta import OWNER_ID
+from Siesta.config import get_str_key
+from Siesta.services.events import register
+from Siesta.services.telethon import tbot as update
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 
@@ -123,7 +123,7 @@ async def upstream(ups):
     changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
 
     if not changelog and not force_update:
-        await lol.edit("\nYour DaisyX  >>  **up-to-date**  \n")
+        await lol.edit("\nYour Siesta  >>  **up-to-date**  \n")
         repo.__del__()
         return
 
@@ -200,6 +200,6 @@ async def upstream(ups):
             repo.git.reset("--hard", "FETCH_HEAD")
         await updateme_requirements()
         await lol.edit("`Successfully Updated!\n" "restarting......`")
-        args = [sys.executable, "-m", "DaisyX"]
+        args = [sys.executable, "-m", "Siesta"]
         execle(sys.executable, *args, environ)
         return
