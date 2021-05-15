@@ -21,11 +21,12 @@ from typing import Union
 from aiogram.dispatcher.handler import SkipHandler
 from aiogram.types import CallbackQuery, Message
 from aiogram.utils.exceptions import BadRequest, ChatNotFound, Unauthorized
+from telethon.tl.functions.users import GetFullUserRequest
+
 from Siesta import OPERATORS, bot
 from Siesta.services.mongo import db
 from Siesta.services.redis import bredis
 from Siesta.services.telethon import tbot
-from telethon.tl.functions.users import GetFullUserRequest
 
 from .language import get_string
 from .message import get_arg
