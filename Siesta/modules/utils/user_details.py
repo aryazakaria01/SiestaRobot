@@ -21,10 +21,10 @@ from typing import Union
 from aiogram.dispatcher.handler import SkipHandler
 from aiogram.types import CallbackQuery, Message
 from aiogram.utils.exceptions import BadRequest, ChatNotFound, Unauthorized
-from DaisyX import OPERATORS, bot
-from DaisyX.services.mongo import db
-from DaisyX.services.redis import bredis
-from DaisyX.services.telethon import tbot
+from Siesta import OPERATORS, bot
+from Siesta.services.mongo import db
+from Siesta.services.redis import bredis
+from Siesta.services.telethon import tbot
 from telethon.tl.functions.users import GetFullUserRequest
 
 from .language import get_string
@@ -272,7 +272,7 @@ async def get_user_by_text(message, text: str):
         # If username matches entity's text
         if text in entity.get_text(message.text):
             if entity.type == "mention":
-                # This one entity is comes with mention by username, like @rDaisyBot
+                # This one entity is comes with mention by username, like @rSiestaRobot
                 return await get_user_by_username(text)
             elif entity.type == "text_mention":
                 # This one is link mention, mostly used for users without an username
