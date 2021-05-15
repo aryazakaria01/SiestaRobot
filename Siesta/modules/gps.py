@@ -16,8 +16,8 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-from DaisyX.services.events import register
-from DaisyX.services.telethon import tbot as client
+from Siesta.services.events import register
+from Siesta.services.telethon import tbot as client
 from geopy.geocoders import Nominatim
 from telethon import *
 from telethon.tl import *
