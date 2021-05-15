@@ -19,8 +19,8 @@ SOFTWARE.
 """
 import os
 
-from DaisyX.function.pluginhelpers import member_permissions
-from DaisyX.services.pyrogram import pbot as app
+from Siesta.function.pluginhelpers import member_permissions
+from Siesta.services.pyrogram import pbot as app
 from pyrogram import filters
 
 
@@ -153,6 +153,6 @@ Make it easy to admins for manage users and groups with the admin module!
 - /setsticker: Set group sticker
 
 *Note:
-Sometimes, you promote or demote an admin manually, and Daisy doesn't realise it immediately. This is because to avoid spamming telegram servers, admin status is cached locally.
-This means that you sometimes have to wait a few minutes for admin rights to update. If you want to update them immediately, you can use the /admincache command; that'll force Daisy to check who the admins are again.
+Sometimes, you promote or demote an admin manually, and Siesta doesn't realise it immediately. This is because to avoid spamming telegram servers, admin status is cached locally.
+This means that you sometimes have to wait a few minutes for admin rights to update. If you want to update them immediately, you can use the /admincache command; that'll force Siesta to check who the admins are again.
 """
