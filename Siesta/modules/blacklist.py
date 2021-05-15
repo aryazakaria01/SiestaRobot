@@ -19,10 +19,10 @@
 
 import html
 
-import DaisyX.services.sql.urlblacklist_sql as urlsql
+import Siesta.services.sql.urlblacklist_sql as urlsql
 import tldextract
-from DaisyX.services.events import register
-from DaisyX.services.telethon import tbot
+from Siesta.services.events import register
+from Siesta.services.telethon import tbot
 from telethon import events, types
 from telethon.tl import functions
 
@@ -202,7 +202,7 @@ async def _(event):
 
 
 __help__ = """
-<b> Daisy's filters are the blacklist too </b>
+<b> Siesta's filters are the blacklist too </b>
  - /addfilter [trigger] Select action: blacklists the trigger
  - /delfilter [trigger] : stop blacklisting a certain blacklist trigger
  - /filters: list all active blacklist filters
