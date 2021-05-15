@@ -20,7 +20,7 @@
 import os
 import sys
 
-from DaisyX.utils.logger import log
+from Siesta.utils.logger import log
 
 LOADED_MODULES = []
 MOD_HELP = {}
