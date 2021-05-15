@@ -16,9 +16,10 @@
 import urllib.request
 
 from bs4 import BeautifulSoup
-from Siesta.services.telethon import tbot
 from telethon import events
 from telethon.tl import functions, types
+
+from Siesta.services.telethon import tbot
 
 
 async def is_register_admin(chat, user):
