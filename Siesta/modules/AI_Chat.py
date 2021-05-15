@@ -24,10 +24,10 @@ url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
 import re
 
 import aiohttp
-from DaisyX import BOT_ID
-from DaisyX.db.mongo_helpers.aichat import add_chat, get_session, remove_chat
-from DaisyX.function.pluginhelpers import admins_only, edit_or_reply
-from DaisyX.services.pyrogram import pbot as daisyx
+from Siesta import BOT_ID
+from Siesta.db.mongo_helpers.aichat import add_chat, get_session, remove_chat
+from Siesta.function.pluginhelpers import admins_only, edit_or_reply
+from Siesta.services.pyrogram import pbot as daisyx
 from google_trans_new import google_translator
 from pyrogram import filters
 
@@ -58,7 +58,7 @@ daisy_chats = []
 en_chats = []
 # AI Chat (C) 2020-2021 by @InukaAsith
 """
-@daisyx.on_message(
+@siesta.on_message(
     filters.voice & filters.reply & ~filters.bot & ~filters.via_bot & ~filters.forwarded,
     group=2,
 )
@@ -90,7 +90,7 @@ async def hmm(client, message):
 """
 
 
-@daisyx.on_message(
+@siesta.on_message(
     filters.command("chatbot") & ~filters.edited & ~filters.bot & ~filters.private
 )
 @admins_only
@@ -136,7 +136,7 @@ async def hmm(_, message):
         )
 
 
-@daisyx.on_message(
+@siesta.on_message(
     filters.text
     & filters.reply
     & ~filters.bot
@@ -162,9 +162,9 @@ async def hmm(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("daisy", "Aco")
-        test = test.replace("Daisy", "Aco")
-        URL = "https://api.affiliateplus.xyz/api/chatbot?message=hi&botname=@DaisyXbot&ownername=@TeamDaisyX"
+        test = test.replace("siesta", "Aco")
+        test = test.replace("Siesta", "Aco")
+        URL = "https://api.affiliateplus.xyz/api/chatbot?message=hi&botname=@SiestaRoot&ownername=@HayakaRyu"
 
         try:
             r = requests.request("GET", url=URL)
@@ -178,7 +178,7 @@ async def hmm(client, message):
 
         pro = result["message"]
         try:
-            await daisyx.send_chat_action(message.chat.id, "typing")
+            await siesta.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError:
             return
@@ -225,9 +225,9 @@ async def hmm(client, message):
         # test = emoji.demojize(test.strip())
 
         # Kang with the credits bitches @InukaASiTH
-        test = test.replace("daisy", "Aco")
-        test = test.replace("Daisy", "Aco")
-        URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@DaisyXbot&ownername=@TeamDaisyX"
+        test = test.replace("siesta", "Aco")
+        test = test.replace("Siesta", "Aco")
+        URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@SiestaRobot&ownername=@HayakaRyu"
         try:
             r = requests.request("GET", url=URL)
         except:
@@ -244,13 +244,13 @@ async def hmm(client, message):
             except:
                 return
         try:
-            await daisyx.send_chat_action(message.chat.id, "typing")
+            await siesta.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError:
             return
 
 
-@daisyx.on_message(
+@siesta.on_message(
     filters.text & filters.private & ~filters.edited & filters.reply & ~filters.bot
 )
 async def inuka(client, message):
@@ -299,9 +299,9 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("daisy", "Aco")
-    test = test.replace("Daisy", "Aco")
-    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@DaisyXbot&ownername=@TeamDaisyX"
+    test = test.replace("siesta", "Aco")
+    test = test.replace("Siesta", "Aco")
+    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@SiestaRobot&ownername=@HayakaRyu"
     try:
         r = requests.request("GET", url=URL)
     except:
@@ -316,14 +316,14 @@ async def inuka(client, message):
     if not "en" in lan and not lan == "":
         pro = translator.translate(pro, lang_tgt=lan[0])
     try:
-        await daisyx.send_chat_action(message.chat.id, "typing")
+        await siesta.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError:
         return
 
 
-@daisyx.on_message(
-    filters.regex("Daisy|daisy|DaisyX|daisyx|Daisyx")
+@siesta.on_message(
+    filters.regex("Siesta|siesta|SiestaRobot|siestarobot|SiestaBot")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -377,9 +377,9 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("daisy", "Aco")
-    test = test.replace("Daisy", "Aco")
-    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@DaisyXbot&ownername=@TeamDaisyX"
+    test = test.replace("siesta", "Aco")
+    test = test.replace("Siesta", "Aco")
+    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@SiestaRobot&ownername=@HayakaRyu"
     try:
         r = requests.request("GET", url=URL)
     except:
@@ -396,7 +396,7 @@ async def inuka(client, message):
         except Exception:
             return
     try:
-        await daisyx.send_chat_action(message.chat.id, "typing")
+        await siesta.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError:
         return
@@ -404,14 +404,14 @@ async def inuka(client, message):
 
 __help__ = """
 <b> Chatbot </b>
-DAISY AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
+SIESTA AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
 
  - /chatbot [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
  - /chatbot EN : Enables English only chatbot
  
  
 <b> Assistant </b>
- - /ask [question]: Ask question from daisy
+ - /ask [question]: Ask question from siesta
  - /ask [reply to voice note]: Get voice reply
  
 """
