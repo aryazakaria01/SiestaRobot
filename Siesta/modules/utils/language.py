@@ -17,6 +17,7 @@ import os
 
 import yaml
 from babel.core import Locale
+
 from Siesta.services.mongo import db
 from Siesta.services.redis import redis
 from Siesta.utils.logger import log
