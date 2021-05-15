@@ -21,13 +21,13 @@ import re
 import sys
 from datetime import datetime
 
-import DaisyX.modules.utils.tmarkdown as tmarkdown
+import Siesta.modules.utils.tmarkdown as tmarkdown
 from aiogram.types import Message
 from aiogram.types.inline_keyboard import InlineKeyboardButton, InlineKeyboardMarkup
 from aiogram.utils import markdown
 from babel.dates import format_date, format_datetime, format_time
-from DaisyX import BOT_USERNAME
-from DaisyX.services.telethon import tbot
+from Siesta import BOT_USERNAME
+from Siesta.services.telethon import tbot
 from telethon.errors import (
     BadRequestError,
     ButtonUrlInvalidError,
