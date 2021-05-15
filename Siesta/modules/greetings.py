@@ -39,14 +39,14 @@ from aiogram.utils.exceptions import (
 from apscheduler.jobstores.base import JobLookupError
 from babel.dates import format_timedelta
 from captcha.image import ImageCaptcha
-from DaisyX import BOT_ID, BOT_USERNAME, LOGS_CHANNEL_ID, bot, dp
-from DaisyX.config import get_str_key
-from DaisyX.decorator import register
-from DaisyX.services.apscheduller import scheduler
-from DaisyX.services.mongo import db
-from DaisyX.services.redis import redis
-from DaisyX.services.telethon import tbot
-from DaisyX.stuff.fonts import ALL_FONTS
+from Siesta import BOT_ID, BOT_USERNAME, LOGS_CHANNEL_ID, bot, dp
+from Siesta.config import get_str_key
+from Siesta.decorator import register
+from Siesta.services.apscheduller import scheduler
+from Siesta.services.mongo import db
+from Siesta.services.redis import redis
+from Siesta.services.telethon import tbot
+from Siesta.stuff.fonts import ALL_FONTS
 from telethon.tl.custom import Button
 
 from ..utils.cached import cached
@@ -579,7 +579,7 @@ async def reset_security_note(message, chat, strings):
 @get_strings_dec("greetings")
 async def welcome_security_handler(message: Message, strings):
     if len(message.new_chat_members) > 1:
-        # FIXME: Daisy doesnt support adding multiple users currently
+        # FIXME: Siesta doesnt support adding multiple users currently
         return
 
     new_user = message.new_chat_members[0]
@@ -1010,7 +1010,7 @@ async def welcome_security_passed(
 @get_strings_dec("greetings")
 async def welcome_trigger(message: Message, strings):
     if len(message.new_chat_members) > 1:
-        # FIXME: Daisy doesnt support adding multiple users currently
+        # FIXME: Siesta doesnt support adding multiple users currently
         return
 
     chat_id = message.chat.id
