@@ -24,6 +24,7 @@ import bs4
 import jikanpy
 import requests
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+
 from Siesta.decorator import register
 
 from .utils.anime import (

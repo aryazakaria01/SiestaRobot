@@ -18,8 +18,6 @@
 import os
 from time import sleep
 
-from Siesta import OWNER_ID
-from Siesta.services.telethon import tbot as bot
 from telethon import *
 from telethon import events
 from telethon.errors import *
@@ -33,6 +31,9 @@ from telethon.tl.types import (
     ChatBannedRights,
     MessageEntityMentionName,
 )
+
+from Siesta import OWNER_ID
+from Siesta.services.telethon import tbot as bot
 
 # =================== CONSTANT ===================
 PP_TOO_SMOL = "**The image is too small**"

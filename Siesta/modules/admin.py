@@ -19,9 +19,10 @@ SOFTWARE.
 """
 import os
 
+from pyrogram import filters
+
 from Siesta.function.pluginhelpers import member_permissions
 from Siesta.services.pyrogram import pbot as app
-from pyrogram import filters
 
 
 @app.on_message(filters.command("setgrouptitle") & ~filters.private)

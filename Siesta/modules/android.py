@@ -23,6 +23,7 @@ import httpx
 import rapidjson as json
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from bs4 import BeautifulSoup
+
 from Siesta import decorator
 from Siesta.decorator import register
 
