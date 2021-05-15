@@ -20,9 +20,9 @@
 import os
 
 import cloudmersive_virus_api_client
-from DaisyX.config import get_str_key
-from DaisyX.services.events import register
-from DaisyX.services.telethon import tbot
+from Siesta.config import get_str_key
+from Siesta.services.events import register
+from Siesta.services.telethon import tbot
 from telethon.tl import functions, types
 from telethon.tl.types import DocumentAttributeFilename, MessageMediaDocument
 
