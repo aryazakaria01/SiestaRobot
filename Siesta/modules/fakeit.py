@@ -15,11 +15,12 @@
 import os
 
 import requests
-from Siesta.function.telethonbasics import is_admin
-from Siesta.services.telethon import tbot
 from faker import Faker
 from faker.providers import internet
 from telethon import events
+
+from Siesta.function.telethonbasics import is_admin
+from Siesta.services.telethon import tbot
 
 
 @tbot.on(events.NewMessage(pattern="/fakegen$"))
