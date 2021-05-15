@@ -32,12 +32,12 @@ from aiogram.utils.callback_data import CallbackData
 from aiogram.utils.exceptions import MessageCantBeDeleted, MessageToDeleteNotFound
 from async_timeout import timeout
 from bson.objectid import ObjectId
-from DaisyX import bot, loop
-from DaisyX.decorator import register
-from DaisyX.modules import LOADED_MODULES
-from DaisyX.services.mongo import db
-from DaisyX.services.redis import redis
-from DaisyX.utils.logger import log
+from Siesta import bot, loop
+from Siesta.decorator import register
+from Siesta.modules import LOADED_MODULES
+from Siesta.services.mongo import db
+from Siesta.services.redis import redis
+from Siesta.utils.logger import log
 from pymongo import UpdateOne
 
 from .utils.connections import chat_connection, get_connected_chat
