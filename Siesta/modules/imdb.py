@@ -21,10 +21,11 @@ import re
 
 import bs4
 import requests
-from Siesta.services.events import register
-from Siesta.services.telethon import tbot
 from telethon import types
 from telethon.tl import functions
+
+from Siesta.services.events import register
+from Siesta.services.telethon import tbot
 
 langi = "en"
 
