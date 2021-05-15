@@ -17,6 +17,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from countryinfo import CountryInfo
+
 from Siesta.services.events import register
 from Siesta.services.telethon import tbot as borg
 
