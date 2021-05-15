@@ -16,8 +16,8 @@ import re
 from datetime import datetime
 
 import requests
-from DaisyX.function.telethonbasics import is_admin
-from DaisyX.services.telethon import tbot
+from Siesta.function.telethonbasics import is_admin
+from Siesta.services.telethon import tbot
 from telethon import events
 
 
@@ -75,12 +75,12 @@ async def _(event):
         await event.reply("Video Downloaded Successfully. Starting To Upload.")
 
         kk = f"{filename}.mp4"
-        caption = f"Facebook Video downloaded Successfully by @DaisyXBot.\nSay hi to devs @DaisySupport_Official."
+        caption = f"Facebook Video downloaded Successfully by @SiestaRobot.\nSay hi to devs @SiestaSupport."
 
         await tbot.send_file(
             event.chat_id,
             kk,
-            caption="Facebook Video downloaded Successfully by @DaisyXBot.\nSay hi to devs @DaisySupport_Official.",
+            caption="Facebook Video downloaded Successfully by @SiestaRobot.\nSay hi to devs @SiestaSupport.",
         )
         os.system(f"rm {kk}")
     else:
