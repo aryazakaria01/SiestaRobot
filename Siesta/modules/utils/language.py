@@ -17,17 +17,17 @@ import os
 
 import yaml
 from babel.core import Locale
-from DaisyX.services.mongo import db
-from DaisyX.services.redis import redis
-from DaisyX.utils.logger import log
+from Siesta.services.mongo import db
+from Siesta.services.redis import redis
+from Siesta.utils.logger import log
 
 LANGUAGES = {}
 
 log.info("Loading localizations...")
 
-for filename in os.listdir("DaisyX/localization"):
+for filename in os.listdir("Siesta/localization"):
     log.debug("Loading language file " + filename)
-    with open("DaisyX/localization/" + filename, "r", encoding="utf8") as f:
+    with open("Siesta/localization/" + filename, "r", encoding="utf8") as f:
         lang = yaml.load(f, Loader=yaml.CLoader)
 
         lang_code = lang["language_info"]["code"]
