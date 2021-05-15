@@ -17,9 +17,9 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import requests
-from DaisyX.config import get_str_key
-from DaisyX.services.events import register
-from DaisyX.services.telethon import tbot
+from Siesta.config import get_str_key
+from Siesta.services.events import register
+from Siesta.services.telethon import tbot
 from telethon import types
 from telethon.tl import functions
 
