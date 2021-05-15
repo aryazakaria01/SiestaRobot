@@ -16,7 +16,7 @@
 import urllib.request
 
 from bs4 import BeautifulSoup
-from DaisyX.services.telethon import tbot
+from Siesta.services.telethon import tbot
 from telethon import events
 from telethon.tl import functions, types
 
