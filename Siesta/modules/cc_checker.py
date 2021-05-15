@@ -19,9 +19,9 @@
 import asyncio
 import datetime
 
-from DaisyX.services.events import register
-from DaisyX.services.telethon import tbot
-from DaisyX.services.telethonuserbot import ubot
+from Siesta.services.events import register
+from Siesta.services.telethon import tbot
+from Siesta.services.telethonuserbot import ubot
 from telethon.tl import functions, types
 
 
