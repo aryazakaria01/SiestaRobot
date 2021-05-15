@@ -18,8 +18,8 @@
 import os
 from time import sleep
 
-from DaisyX import OWNER_ID
-from DaisyX.services.telethon import tbot as bot
+from Siesta import OWNER_ID
+from Siesta.services.telethon import tbot as bot
 from telethon import *
 from telethon import events
 from telethon.errors import *
