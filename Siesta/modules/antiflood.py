@@ -31,22 +31,22 @@ from aiogram.types.inline_keyboard import InlineKeyboardButton
 from aiogram.types.message import ContentType, Message
 from aiogram.utils.callback_data import CallbackData
 from babel.dates import format_timedelta
-from DaisyX import dp
-from DaisyX.decorator import register
-from DaisyX.modules.utils.connections import chat_connection
-from DaisyX.modules.utils.language import get_strings, get_strings_dec
-from DaisyX.modules.utils.message import (
+from Siesta import dp
+from Siesta.decorator import register
+from Siesta.modules.utils.connections import chat_connection
+from Siesta.modules.utils.language import get_strings, get_strings_dec
+from Siesta.modules.utils.message import (
     InvalidTimeUnit,
     convert_time,
     get_args,
     need_args_dec,
 )
-from DaisyX.modules.utils.restrictions import ban_user, kick_user, mute_user
-from DaisyX.modules.utils.user_details import get_user_link, is_user_admin
-from DaisyX.services.mongo import db
-from DaisyX.services.redis import bredis, redis
-from DaisyX.utils.cached import cached
-from DaisyX.utils.logger import log
+from Siesta.modules.utils.restrictions import ban_user, kick_user, mute_user
+from Siesta.modules.utils.user_details import get_user_link, is_user_admin
+from Siesta.services.mongo import db
+from Siesta.services.redis import bredis, redis
+from Siesta.utils.cached import cached
+from Siesta.utils.logger import log
 
 cancel_state = CallbackData("cancel_state", "user_id")
 
@@ -383,7 +383,7 @@ Antiflood allows you to take action on users that send more than x messages in a
 - /antiflood off: Disables Antiflood
 - /setflood (limit): Sets flood limit
 
-Replace (limit) with any integer, should be less than 200. When setting up, Daisy would ask you to send expiration time, if you dont understand what this expiration time for? User who sends specified limit of messages consecutively within this TIME, would be kicked, banned whatever the action is. if you dont want this TIME, wants to take action against those who exceeds specified limit without mattering TIME INTERVAL between the messages. you can reply to question with 0
+Replace (limit) with any integer, should be less than 200. When setting up, Siesta would ask you to send expiration time, if you dont understand what this expiration time for? User who sends specified limit of messages consecutively within this TIME, would be kicked, banned whatever the action is. if you dont want this TIME, wants to take action against those who exceeds specified limit without mattering TIME INTERVAL between the messages. you can reply to question with 0
 
 <b>Configuring the time:</b>
 <code>2m</code> = 2 minutes
@@ -392,7 +392,7 @@ Replace (limit) with any integer, should be less than 200. When setting up, Dais
 
 <b>Example:</b>
 Me: <code>/setflood 10</code>
-Daisy: <code>Please send expiration time [...]</code>
+Siesta: <code>Please send expiration time [...]</code>
 Me: <code>5m</code> (5 minutes)
 DONE!
 
