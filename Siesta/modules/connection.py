@@ -25,10 +25,10 @@ from aiogram.types.inline_keyboard import InlineKeyboardButton, InlineKeyboardMa
 from aiogram.utils.callback_data import CallbackData
 from aiogram.utils.deep_linking import get_start_link
 from aiogram.utils.exceptions import BotBlocked, CantInitiateConversation
-from DaisyX import bot
-from DaisyX.decorator import register
-from DaisyX.services.mongo import db
-from DaisyX.services.redis import redis
+from Siesta import bot
+from Siesta.decorator import register
+from Siesta.services.mongo import db
+from Siesta.services.redis import redis
 
 from .utils.connections import chat_connection, get_connection_data, set_connected_chat
 from .utils.language import get_strings_dec
@@ -77,7 +77,7 @@ async def connect_to_chat_direct(message, strings):
         await def_connect_chat(message, user_id, chat_id, chat_title)
     except (BotBlocked, CantInitiateConversation):
         await message.reply(strings["connected_pm_to_me"].format(chat_name=chat_title))
-        redis.set("DaisyX_connected_start_state:" + str(user_id), 1)
+        redis.set("Siesta_connected_start_state:" + str(user_id), 1)
 
 
 # In pm without args - show last connected chats
@@ -210,7 +210,7 @@ async def allow_users_to_connect(message, strings, chat):
 @get_strings_dec("connections")
 @chat_connection()
 async def connected_start_state(message, strings, chat):
-    key = "DaisyX_connected_start_state:" + str(message.from_user.id)
+    key = "Siesta_connected_start_state:" + str(message.from_user.id)
     if redis.get(key):
         await message.reply(
             strings["pm_connected"].format(chat_name=chat["chat_title"])
@@ -264,7 +264,7 @@ async def connect_anon_admins(event: CallbackQuery):
 __mod_name__ = "Connections"
 
 __help__ = """
-Sometimes you need change something in your chat, like notes, but you don't want to spam in it, try connections, this allow you change chat settings and manage chat's content in personal message with Daisy.
+Sometimes you need change something in your chat, like notes, but you don't want to spam in it, try connections, this allow you change chat settings and manage chat's content in personal message with Siesta.
 
 <b>Available commands are:</b>
 <b>Avaible only in PM:</b>
