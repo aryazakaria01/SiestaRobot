@@ -2,8 +2,8 @@
 # All Credit to WilliamButcherBot.
 
 
-from DaisyX.function.pluginhelpers import admins_only
-from DaisyX.services.pyrogram import pbot as app
+from Siesta.function.pluginhelpers import admins_only
+from Siesta.services.pyrogram import pbot as app
 from pyrogram import filters
 
 
