@@ -21,6 +21,7 @@ from random import choice
 
 import requests
 from bs4 import BeautifulSoup
+
 from Siesta.decorator import register
 
 from .utils.disable import disableable_dec

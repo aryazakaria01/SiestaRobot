@@ -18,6 +18,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from aiogram.types.inline_keyboard import InlineKeyboardButton, InlineKeyboardMarkup
+
 from Siesta.decorator import COMMANDS_ALIASES, register
 from Siesta.services.mongo import db
 

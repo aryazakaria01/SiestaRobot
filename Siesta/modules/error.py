@@ -21,10 +21,11 @@ import html
 import sys
 
 from aiogram.types import Update
+from redis.exceptions import RedisError
+
 from Siesta import OWNER_ID, bot, dp
 from Siesta.services.redis import redis
 from Siesta.utils.logger import log
-from redis.exceptions import RedisError
 
 SENT = []
 
