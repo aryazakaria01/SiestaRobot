@@ -24,12 +24,12 @@ url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
 import re
 
 import aiohttp
+from google_trans_new import google_translator
+from pyrogram import filters
+
 from Siesta import BOT_ID
 from Siesta.db.mongo_helpers.aichat import add_chat, get_session, remove_chat
 from Siesta.function.pluginhelpers import admins_only, edit_or_reply
-from Siesta.services.pyrogram import pbot as daisyx
-from google_trans_new import google_translator
-from pyrogram import filters
 
 translator = google_translator()
 import requests
