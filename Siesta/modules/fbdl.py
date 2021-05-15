@@ -16,9 +16,10 @@ import re
 from datetime import datetime
 
 import requests
+from telethon import events
+
 from Siesta.function.telethonbasics import is_admin
 from Siesta.services.telethon import tbot
-from telethon import events
 
 
 def main(url, filename):
