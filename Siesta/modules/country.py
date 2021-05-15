@@ -17,8 +17,8 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from countryinfo import CountryInfo
-from DaisyX.services.events import register
-from DaisyX.services.telethon import tbot as borg
+from Siesta.services.events import register
+from Siesta.services.telethon import tbot as borg
 
 
 @register(pattern="^/country (.*)")
@@ -110,7 +110,7 @@ Sub Region:- {sub}
 Time Zones:- {tom}
 Top Level Domain:- {lanester}
 wikipedia:- {wiki}</b>
-Gathered By Daisy X.</b>
+Gathered By Siesta.</b>
 """
 
     await borg.send_message(
