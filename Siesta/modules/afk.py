@@ -20,8 +20,8 @@
 import html
 import re
 
-from DaisyX.decorator import register
-from DaisyX.services.mongo import db
+from Siesta.decorator import register
+from Siesta.services.mongo import db
 
 from .utils.disable import disableable_dec
 from .utils.language import get_strings_dec
