@@ -39,6 +39,8 @@ from aiogram.utils.exceptions import (
 from apscheduler.jobstores.base import JobLookupError
 from babel.dates import format_timedelta
 from captcha.image import ImageCaptcha
+from telethon.tl.custom import Button
+
 from Siesta import BOT_ID, BOT_USERNAME, LOGS_CHANNEL_ID, bot, dp
 from Siesta.config import get_str_key
 from Siesta.decorator import register
@@ -47,7 +49,6 @@ from Siesta.services.mongo import db
 from Siesta.services.redis import redis
 from Siesta.services.telethon import tbot
 from Siesta.stuff.fonts import ALL_FONTS
-from telethon.tl.custom import Button
 
 from ..utils.cached import cached
 from .utils.connections import chat_connection
