@@ -19,12 +19,13 @@
 
 import html
 
-import Siesta.services.sql.urlblacklist_sql as urlsql
 import tldextract
-from Siesta.services.events import register
-from Siesta.services.telethon import tbot
 from telethon import events, types
 from telethon.tl import functions
+
+import Siesta.services.sql.urlblacklist_sql as urlsql
+from Siesta.services.events import register
+from Siesta.services.telethon import tbot
 
 
 async def can_change_info(message):
