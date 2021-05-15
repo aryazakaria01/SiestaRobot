@@ -17,11 +17,12 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import requests
+from telethon import types
+from telethon.tl import functions
+
 from Siesta.config import get_str_key
 from Siesta.services.events import register
 from Siesta.services.telethon import tbot
-from telethon import types
-from telethon.tl import functions
 
 CASH_API_KEY = get_str_key("CASH_API_KEY", required=False)
 
