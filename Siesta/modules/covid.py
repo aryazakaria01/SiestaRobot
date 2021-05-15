@@ -16,8 +16,8 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from DaisyX.function.pluginhelpers import fetch, json_prettify
-from DaisyX.services.pyrogram import pbot as app
+from Siesta.function.pluginhelpers import fetch, json_prettify
+from Siesta.services.pyrogram import pbot as app
 from pyrogram import filters
 
 
