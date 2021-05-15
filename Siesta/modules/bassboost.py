@@ -7,9 +7,9 @@ import math
 import os
 
 import numpy as np
-from DaisyX import BOT_ID, OWNER_ID
-from DaisyX.function.telethonbasics import is_admin
-from DaisyX.services.telethon import tbot
+from Siesta import BOT_ID, OWNER_ID
+from Siesta.function.telethonbasics import is_admin
+from Siesta.services.telethon import tbot
 from pydub import AudioSegment
 from telethon import events
 
@@ -86,7 +86,7 @@ async def __(event):
                 event.chat_id,
                 m,
                 voice_note=True,
-                caption="Bass Boosted, \nDone By @DaisySupport_Official",
+                caption="Bass Boosted, \nDone By @SiestaSupport",
             )
 
             os.remove(m)
@@ -99,7 +99,7 @@ async def __(event):
             await tbot.send_file(
                 event.chat_id,
                 m,
-                caption="Bass Boosted, \nDone By @DaisySupport_Official",
+                caption="Bass Boosted, \nDone By @SiestaSupport",
             )
 
             os.remove(m)
