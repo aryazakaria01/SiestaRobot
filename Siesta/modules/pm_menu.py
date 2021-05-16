@@ -23,8 +23,8 @@ from contextlib import suppress
 from aiogram.types.inline_keyboard import InlineKeyboardButton, InlineKeyboardMarkup
 from aiogram.utils.callback_data import CallbackData
 from aiogram.utils.exceptions import MessageNotModified
-from DaisyX.decorator import register
-from DaisyX.modules.utils.disable import disableable_dec
+from Siesta.decorator import register
+from Siesta.modules.utils.disable import disableable_dec
 
 from . import MOD_HELP
 from .language import select_lang_keyboard
@@ -80,19 +80,19 @@ async def get_start_func(message, strings, edit=False):
     buttons.add(
         InlineKeyboardButton(strings["btn_lang"], callback_data="lang_btn"),
         InlineKeyboardButton(
-            strings["btn_source"], url="https://github.com/TeamDaisyX/"
+            strings["btn_source"], url="https://github.com/HayakaRyu/"
         ),
     )
     buttons.add(
-        InlineKeyboardButton(strings["btn_channel"], url="https://t.me/DaisyXUpdates"),
+        InlineKeyboardButton(strings["btn_channel"], url="https://t.me/HayakaRyupdates"),
         InlineKeyboardButton(
-            strings["btn_group"], url="https://t.me/DaisySupport_Official"
+            strings["btn_group"], url="https://t.me/SiestaSupport"
         ),
     )
     buttons.add(
         InlineKeyboardButton(
-            "👸🏼 Add DaisyX to your group",
-            url=f"https://telegram.me/daisyxbot?startgroup=true",
+            "👸🏼 Add Siesta to your group",
+            url=f"https://telegram.me/siestarobot?startgroup=true",
         )
     )
     # Handle error when user click the button 2 or more times simultaneously
@@ -134,7 +134,7 @@ async def help_cmd(message, strings):
 async def help_cmd_g(message, strings):
     text = strings["btn_group_help"]
     button = InlineKeyboardMarkup().add(
-        InlineKeyboardButton(text=text, url="https://t.me/DaisyXBOT?start")
+        InlineKeyboardButton(text=text, url="https://t.me/SiestaRobot?start")
     )
     await message.reply(strings["help_header"], reply_markup=button)
 
