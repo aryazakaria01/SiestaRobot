@@ -1,4 +1,4 @@
-# Copyright (C) 2021 Red-Aura & TeamDaisyX
+# Copyright (C) 2021 Red-Aura & TeamDaisyX & HamkerCat
 
 # This file is part of Daisy (Telegram Bot)
 
@@ -29,10 +29,16 @@ from pyrogram import filters
 
 from Siesta import BOT_ID
 from Siesta.db.mongo_helpers.aichat import add_chat, get_session, remove_chat
+from Siesta.function.inlinehelper import arq
 from Siesta.function.pluginhelpers import admins_only, edit_or_reply
+from Siesta.services.pyrogram import pbot as siesta
 
 translator = google_translator()
-import requests
+
+
+async def lunaQuery(query):
+    luna = await arq.luna(query)
+    return luna.result
 
 
 def extract_emojis(s):
@@ -54,7 +60,7 @@ async def fetch(url):
         return
 
 
-daisy_chats = []
+siesta_chats = []
 en_chats = []
 # AI Chat (C) 2020-2021 by @InukaAsith
 """
@@ -95,7 +101,7 @@ async def hmm(client, message):
 )
 @admins_only
 async def hmm(_, message):
-    global daisy_chats
+    global siesta_chats
     if len(message.command) != 2:
         await message.reply_text(
             "I only recognize `/chatbot on` and /chatbot `off only`"
@@ -107,20 +113,20 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("Daisy AI Already Activated In This Chat")
+            await lel.edit("Siesta AI Already Activated In This Chat")
             return
         await lel.edit(
-            f"Daisy AI Successfully Added For Users In The Chat {message.chat.id}"
+            f"Siesta AI Successfully Added For Users In The Chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("Daisy AI Was Not Activated In This Chat")
+            await lel.edit("Siesta AI Was Not Activated In This Chat")
             return
         await lel.edit(
-            f"Daisy AI Successfully Deactivated For Users In The Chat {message.chat.id}"
+            f"Siesta AI Successfully Deactivated For Users In The Chat {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
@@ -164,19 +170,11 @@ async def hmm(client, message):
         test = msg
         test = test.replace("siesta", "Aco")
         test = test.replace("Siesta", "Aco")
-        URL = "https://api.affiliateplus.xyz/api/chatbot?message=hi&botname=@SiestaRoot&ownername=@HayakaRyu"
+        response = await lunaQuery(test)
+        response = response.replace("Aco", "Siesta")
+        response = response.replace("aco", "Siesta")
 
-        try:
-            r = requests.request("GET", url=URL)
-        except:
-            return
-
-        try:
-            result = r.json()
-        except:
-            return
-
-        pro = result["message"]
+        pro = response
         try:
             await siesta.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
@@ -224,20 +222,13 @@ async def hmm(client, message):
                 return
         # test = emoji.demojize(test.strip())
 
-        # Kang with the credits bitches @InukaASiTH
         test = test.replace("siesta", "Aco")
         test = test.replace("Siesta", "Aco")
-        URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@SiestaRobot&ownername=@HayakaRyu"
-        try:
-            r = requests.request("GET", url=URL)
-        except:
-            return
+        response = await lunaQuery(test)
 
-        try:
-            result = r.json()
-        except:
-            return
-        pro = result["message"]
+        response = response.replace("Aco", "Siesta")
+        response = response.replace("aco", "Siesta")
+        pro = response
         if not "en" in lan and not lan == "":
             try:
                 pro = translator.translate(pro, lang_tgt=lan[0])
@@ -301,18 +292,13 @@ async def inuka(client, message):
     # Kang with the credits bitches @InukaASiTH
     test = test.replace("siesta", "Aco")
     test = test.replace("Siesta", "Aco")
-    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@SiestaRobot&ownername=@HayakaRyu"
-    try:
-        r = requests.request("GET", url=URL)
-    except:
-        return
 
-    try:
-        result = r.json()
-    except:
-        return
+    response = await lunaQuery(test)
 
-    pro = result["message"]
+    response = response.replace("Aco", "Siesta")
+    response = response.replace("aco", "Siesta")
+
+    pro = response
     if not "en" in lan and not lan == "":
         pro = translator.translate(pro, lang_tgt=lan[0])
     try:
@@ -323,7 +309,7 @@ async def inuka(client, message):
 
 
 @siesta.on_message(
-    filters.regex("Siesta|siesta|SiestaRobot|siestarobot|SiestaBot")
+    filters.regex("Siesta|siesta|SiestaRobot|SiestaBot|Sies")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -376,20 +362,13 @@ async def inuka(client, message):
 
     # test = emoji.demojize(test.strip())
 
-    # Kang with the credits bitches @InukaASiTH
     test = test.replace("siesta", "Aco")
     test = test.replace("Siesta", "Aco")
-    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@SiestaRobot&ownername=@HayakaRyu"
-    try:
-        r = requests.request("GET", url=URL)
-    except:
-        return
+    response = await lunaQuery(test)
+    response = response.replace("Aco", "Siesta")
+    response = response.replace("aco", "Siesta")
 
-    try:
-        result = r.json()
-    except:
-        return
-    pro = result["message"]
+    pro = response
     if not "en" in lan and not lan == "":
         try:
             pro = translator.translate(pro, lang_tgt=lan[0])
@@ -405,7 +384,6 @@ async def inuka(client, message):
 __help__ = """
 <b> Chatbot </b>
 SIESTA AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
-
  - /chatbot [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
  - /chatbot EN : Enables English only chatbot
  
