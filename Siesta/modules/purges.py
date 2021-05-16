@@ -19,9 +19,9 @@
 
 import asyncio
 
-from DaisyX import bot
-from DaisyX.decorator import register
-from DaisyX.services.telethon import tbot
+from Siesta import bot
+from Siesta.decorator import register
+from Siesta.services.telethon import tbot
 from telethon.errors.rpcerrorlist import MessageDeleteForbiddenError
 
 from .utils.language import get_strings_dec
