@@ -32,7 +32,7 @@ from aiogram.utils.exceptions import (
     MessageNotModified,
     MessageToDeleteNotFound,
 )
-from DaisyX.decorator import register
+from Siesta.decorator import register
 
 from .utils.disable import disableable_dec
 from .utils.httpx import http
