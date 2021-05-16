@@ -3,10 +3,10 @@
 
 from typing import Dict, Union
 
-from DaisyX.db.mongo_helpers.karma import is_karma_on, karma_off, karma_on
-from DaisyX.function.pluginhelpers import member_permissions
-from DaisyX.services.mongo2 import db
-from DaisyX.services.pyrogram import pbot as app
+from Siesta.db.mongo_helpers.karma import is_karma_on, karma_off, karma_on
+from Siesta.function.pluginhelpers import member_permissions
+from Siesta.services.mongo2 import db
+from Siesta.services.pyrogram import pbot as app
 from pyrogram import filters
 
 karmadb = db.karma
