@@ -1,4 +1,4 @@
-# Siesta Example plugin format
+# Siesta Robot Example plugin format
 
 ## Basic: Simple Plugins
 ```python3
