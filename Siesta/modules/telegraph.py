@@ -20,13 +20,13 @@
 import os
 from datetime import datetime
 
-from DaisyX.services.telethon import tbot as borg
+from Siesta.services.telethon import tbot as borg
 from PIL import Image
 from telegraph import Telegraph, exceptions, upload_file
 from telethon import events
 
 telegraph = Telegraph()
-r = telegraph.create_account(short_name="DaisyX")
+r = telegraph.create_account(short_name="Siesta")
 auth_url = r["auth_url"]
 
 # Will change later
