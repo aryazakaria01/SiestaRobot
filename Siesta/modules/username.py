@@ -16,9 +16,9 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from DaisyX.services.events import register as Daisy
-from DaisyX.services.telethon import tbot
-from DaisyX.services.telethonuserbot import ubot
+from Siesta.services.events import register as Siesta
+from Siesta.services.telethon import tbot
+from Siesta.services.telethonuserbot import ubot
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl import functions, types
 
@@ -53,7 +53,7 @@ async def silently_send_message(conv, text):
     return response
 
 
-@Daisy(pattern="^/namehistory ?(.*)")
+@Siesta(pattern="^/namehistory ?(.*)")
 async def _(event):
 
     if event.fwd_from:
