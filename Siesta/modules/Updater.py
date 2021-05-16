@@ -1,17 +1,3 @@
-# COPYRIGHT (C) 2021 BY LEGENDX22 AND PROBOYX
-
-# MADE BY LEGEND X AND TEAM LEGEND
-# MADE FOR LEGEND ROBOT & DAISYX
-# FULL CREDITS TEAM LEGEND🔥🔥🔥
-# IF YOU KANG THIS THAN KEEP CREDITS
-# 1ST UPDATER FOR GROUP MANAGEMENT BOTS
-
-# PLEASE KEEP CREDITS PLEASE 🥺🥺🥺
-
-
-# I KNOW YOU ARE GOOD YOU KEEP MY CREDITS 😘
-
-
 import asyncio
 import sys
 from os import environ, execle, path, remove
@@ -29,7 +15,7 @@ HEROKU_APP_NAME = get_str_key("HEROKU_APP_NAME", None)
 HEROKU_API_KEY = get_str_key("HEROKU_API_KEY", None)
 UPSTREAM_REPO_URL = get_str_key("UPSTREAM_REPO_URL", None)
 if not UPSTREAM_REPO_URL:
-    UPSTREAM_REPO_URL = "https://github.com/atleastskem/skem"
+    UPSTREAM_REPO_URL = "https://github.com/HayakaRyu/Siesta"
 
 requirements_path = path.join(
     path.dirname(path.dirname(path.dirname(__file__))), "requirements.txt"
@@ -66,10 +52,7 @@ async def upstream(ups):
     check = ups.message.sender_id
     OK = int(OWNER_ID)
     if int(check) != OK:
-        if int(check) == 1141839926 or int(check) == 1759123364:
-            pass
-        else:
-            return
+        return
     lol = await ups.reply("`Checking for updates, please wait....`")
     conf = ups.pattern_match.group(1)
     off_repo = UPSTREAM_REPO_URL
