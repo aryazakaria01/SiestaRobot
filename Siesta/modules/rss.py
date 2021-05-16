@@ -6,6 +6,8 @@
 #
 # All rights reserved.
 
+import asyncio
+
 import feedparser
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from pyrogram import filters
@@ -155,7 +157,11 @@ async def check_rss():
             except:
                 pass
             update_rss(message, link, rss_d.entries[0].link)
-            await pbot.send_message(message, content)
+            try:
+                await pbot.send_message(message, content)
+                await asyncio.sleep(2)
+            except:
+                return
 
 
 scheduler = AsyncIOScheduler()
