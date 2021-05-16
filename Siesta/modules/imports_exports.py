@@ -26,9 +26,9 @@ from aiogram import types
 from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.types.input_file import InputFile
 from babel.dates import format_timedelta
-from DaisyX import OPERATORS, bot
-from DaisyX.decorator import register
-from DaisyX.services.redis import redis
+from Siesta import OPERATORS, bot
+from Siesta.decorator import register
+from Siesta.services.redis import redis
 
 from . import LOADED_MODULES
 from .utils.connections import chat_connection
@@ -147,7 +147,7 @@ async def import_fun(message, document, chat, strings):
 
     imported = []
     for module in [m for m in LOADED_MODULES if hasattr(m, "__import__")]:
-        module_name = module.__name__.replace("DaisyX.modules.", "")
+        module_name = module.__name__.replace("Siesta.modules.", "")
         if module_name not in data:
             continue
         if not data[module_name]:
