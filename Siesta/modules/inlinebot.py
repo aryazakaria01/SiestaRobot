@@ -18,10 +18,10 @@ import aiohttp
 import requests
 from bs4 import BeautifulSoup
 from countryinfo import CountryInfo
-from DaisyX.config import get_str_key
-from DaisyX.function.inlinehelper import *
-from DaisyX.function.pluginhelpers import fetch, json_prettify
-from DaisyX.services.pyrogram import pbot as app
+from Siesta.config import get_str_key
+from Siesta.function.inlinehelper import *
+from Siesta.function.pluginhelpers import fetch, json_prettify
+from Siesta.services.pyrogram import pbot as app
 from faker import Faker
 from faker.providers import internet
 from PyDictionary import PyDictionary
@@ -65,12 +65,12 @@ class AioHttp:
 
 __mod_name__ = "Inline"
 __help__ = """
- <b> INLINE BOT SERVICE OF @DAISYXBOT </b> 
+ <b> INLINE BOT SERVICE OF @SIESTAROBOT </b> 
  
 <i> I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline.</i>
 
 <b>Syntax</b>
-   @DaisyXBot [command] [query]
+   @SiestaRobot [command] [query]
 
 <b> Commands Available</b>
 - alive - Check Bot's Stats.
@@ -110,11 +110,11 @@ __help__ = """
 
 __MODULE__ = "Inline"
 __HELP__ = """
- ==>> **INLINE BOT SERVICE OF @DAISYXBOT** <<==
+ ==>> **INLINE BOT SERVICE OF @SIESTAROBOT** <<==
 `I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline.`
 
    >> Syntax <<
-@DaisyXBot [command] [query]
+@SiestaRobot [command] [query]
 
    >> Commands Available <<
 - **alive** - __Check Bot's Stats.__
@@ -640,7 +640,7 @@ async def inline_query_handler(client, query):
         Time Zones:- {tom}
         Top Level Domain:- {lanester}
         wikipedia:- {wiki}</b>
-        Gathered By Daisy X.</b>
+        Gathered By Siesta.</b>
         """
             results.append(
                 InlineQueryResultArticle(
@@ -906,7 +906,7 @@ async def inline_query_handler(client, query):
                 + app_link
                 + "'>View in Play Store</a>"
             )
-            app_details += "\n\n===> @DaisySupport_Official <==="
+            app_details += "\n\n===> @SiestaSupport <==="
             rip.append(
                 InlineQueryResultArticle(
                     title=f"Datails of {app_name}",
