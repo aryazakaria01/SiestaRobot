@@ -24,8 +24,10 @@ import bs4
 import jikanpy
 import requests
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram import filters
 
 from Siesta.decorator import register
+from Siesta.services.pyrogram import pbot
 
 from .utils.anime import (
     airing_query,
@@ -310,13 +312,19 @@ async def kayo(message):
     await site_search(message, "ganime")
 
 
+@pbot.on_message(filters.command("aq"))
+def quote(_, message):
+    quote = requests.get("https://animechan.vercel.app/api/random").json()
+    quote = truth.get("quote")
+    message.reply_text(quote)
+
+
 # added ganime search based on gogoanime.so
 
 __mod_name__ = "Anime"
 
 __help__ = """
 Get information about anime, manga or anime characters.
-
 <b>Available commands:</b>
 - /anime (anime): returns information about the anime.
 - /character (character): returns information about the character.
@@ -326,4 +334,5 @@ Get information about anime, manga or anime characters.
 - /kayo (anime): search an anime on animekayo.com
 - /ganime (anime): search an anime on gogoanime.so
 - /upcoming: returns a list of new anime in the upcoming seasons.
+- /aq : get anime random quote
 """
