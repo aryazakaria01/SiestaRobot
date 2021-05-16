@@ -16,10 +16,10 @@ from random import randint, randrange, uniform
 import emoji
 import nltk
 from cowpy import cow
-from DaisyX import *
-from DaisyX.services.events import register
-from DaisyX.services.telethon import tbot
-from DaisyX.services.telethonuserbot import ubot
+from Siesta import *
+from Siesta.services.events import register
+from Siesta.services.telethon import tbot
+from Siesta.services.telethonuserbot import ubot
 from fontTools.ttLib import TTFont
 from PIL import Image, ImageDraw, ImageEnhance, ImageFont, ImageOps
 from selenium import webdriver
