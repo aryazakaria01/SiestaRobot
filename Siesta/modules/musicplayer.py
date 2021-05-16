@@ -18,9 +18,9 @@
 
 __mod_name__ = "Music Player"
 __help__ = """
-          <b>》** DAISYXMUSIC v2 ** 《</b>
+          <b>》** Siesta Music ** 《</b>
             
- DAISYXMUSIC plays plays music in your group's voice chat
+Siesta Music plays plays music in your group's voice chat
  
  Assistant name >> @DaisyXhelper
  
