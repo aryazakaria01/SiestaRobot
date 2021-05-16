@@ -16,8 +16,8 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from DaisyX.function.pluginhelpers import admins_only
-from DaisyX.services.pyrogram import pbot
+from Siesta.function.pluginhelpers import admins_only
+from Siesta.services.pyrogram import pbot
 from pyrogram import filters
 
 __HELP__ = """
