@@ -9,8 +9,8 @@
 import os
 
 import requests
-from DaisyX.function.pluginhelpers import edit_or_reply, get_text
-from DaisyX.services.pyrogram import pbot
+from Siesta.function.pluginhelpers import edit_or_reply, get_text
+from Siesta.services.pyrogram import pbot
 from pyrogram import filters
 
 
