@@ -8,6 +8,8 @@
 
 import feedparser
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from pyrogram import filters
+
 from Siesta.db.mongo_helpers.rss_db import (
     add_rss,
     basic_check,
@@ -21,7 +23,6 @@ from Siesta.db.mongo_helpers.rss_db import (
 )
 from Siesta.function.pluginhelpers import admins_only, edit_or_reply, get_text
 from Siesta.services.pyrogram import pbot
-from pyrogram import filters
 
 
 @pbot.on_message(filters.command("addrss") & ~filters.edited & ~filters.bot)

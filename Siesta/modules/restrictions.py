@@ -23,6 +23,7 @@ from contextlib import suppress
 
 from aiogram.utils.exceptions import MessageNotModified
 from babel.dates import format_timedelta
+
 from Siesta import BOT_ID, bot
 from Siesta.decorator import register
 from Siesta.services.redis import redis
