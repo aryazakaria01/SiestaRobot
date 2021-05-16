@@ -16,6 +16,7 @@ import json
 import math
 
 import requests
+
 from Siesta.decorator import register
 
 from .utils.disable import disableable_dec
