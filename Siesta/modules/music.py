@@ -20,10 +20,11 @@ import io
 import os
 
 import lyricsgenius
-from Siesta.config import get_str_key
-from Siesta.services.pyrogram import pbot
 from pyrogram import filters
 from tswift import Song
+
+from Siesta.config import get_str_key
+from Siesta.services.pyrogram import pbot
 
 GENIUS = get_str_key("GENIUS_API_TOKEN", None)
 
