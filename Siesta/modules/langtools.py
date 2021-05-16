@@ -19,7 +19,7 @@
 import json
 
 import requests
-from DaisyX.services.events import register
+from Siesta.services.events import register
 from google_trans_new import google_translator
 from PyDictionary import PyDictionary
 from telethon import *
