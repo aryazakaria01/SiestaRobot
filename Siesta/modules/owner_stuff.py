@@ -24,13 +24,14 @@ import sys
 
 import rapidjson
 import requests
+from Skem import skemmers
+
 from Siesta import SIESTA_VERSION, bot, dp
 from Siesta.decorator import COMMANDS_ALIASES, REGISTRED_COMMANDS, register
 from Siesta.modules import LOADED_MODULES
 from Siesta.services.mongo import db, mongodb
 from Siesta.services.redis import redis
 from Siesta.services.telethon import tbot
-from Skem import skemmers
 
 from .utils.covert import convert_size
 from .utils.language import get_strings_dec
