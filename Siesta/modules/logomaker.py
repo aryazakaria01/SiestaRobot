@@ -17,8 +17,8 @@ import random
 
 import requests
 from bs4 import *
-from DaisyX.function.pluginhelpers import admins_only, get_text
-from DaisyX.services.pyrogram import pbot
+from Siesta.function.pluginhelpers import admins_only, get_text
+from Siesta.services.pyrogram import pbot
 from pyrogram import filters
 
 
@@ -47,7 +47,7 @@ def download_images(images):
 
                     r = str(r, "utf-8")
                 except UnicodeDecodeError:
-                    with open("logo@DaisyXBOT.jpg", "wb+") as f:
+                    with open("logo@SiestaRobot.jpg", "wb+") as f:
                         f.write(r)
                     count += 1
             except:
@@ -79,11 +79,11 @@ async def logogen(client, message):
     except BaseException:
         typeo = "name"
         await pablo.edit(
-            "Give name and type for logo Idiot. like `/logogen Daisy:Robot`"
+            "Give name and type for logo Idiot. like `/logogen Siesta:Robot`"
         )
     name = lmao[0]
     mainne(name, typeo)
-    pate = "logo@DaisyXBOT.jpg"
+    pate = "logo@SiestaRobot.jpg"
     await client.send_photo(message.chat.id, pate)
     try:
         os.remove(pate)
