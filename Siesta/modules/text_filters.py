@@ -3,14 +3,14 @@
 
 # Don't edit these lines
 
-from DaisyX.db.mongo_helpers.filterdb import (
+from Siesta.db.mongo_helpers.filterdb import (
     delete_filter,
     get_filter,
     get_filters_names,
     save_filter,
 )
-from DaisyX.function.pluginhelpers import member_permissions
-from DaisyX.services.pyrogram import pbot as app
+from Siesta.function.pluginhelpers import member_permissions
+from Siesta.services.pyrogram import pbot as app
 from pyrogram import filters
 
 
