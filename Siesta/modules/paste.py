@@ -9,9 +9,10 @@
 import os
 
 import requests
+from pyrogram import filters
+
 from Siesta.function.pluginhelpers import edit_or_reply, get_text
 from Siesta.services.pyrogram import pbot
-from pyrogram import filters
 
 
 @pbot.on_message(filters.command("paste") & ~filters.edited & ~filters.bot)
