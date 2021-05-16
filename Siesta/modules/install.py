@@ -2,8 +2,8 @@
 # Ported This Plugin here By Devil from wbb.
 import os
 
-from DaisyX import OWNER_ID
-from DaisyX.services.pyrogram import pbot as app
+from Siesta import OWNER_ID
+from Siesta.services.pyrogram import pbot as app
 from pyrogram import filters
 
 
@@ -20,9 +20,9 @@ async def install_module(_, message):
         await message.reply_text("INVALID_MIME_TYPE, Reply To A Correct .py File.")
         return
     m = await message.reply_text("**Installing Module**")
-    await message.reply_to_message.download(f"./DaisyX/modules/{document.file_name}")
+    await message.reply_to_message.download(f"./Siesta/modules/{document.file_name}")
     await m.edit("**Restarting**")
     os.execvp(
         f"python{str(pyver.split(' ')[0])[:3]}",
-        [f"python{str(pyver.split(' ')[0])[:3]}", "-m", "DaisyX"],
+        [f"python{str(pyver.split(' ')[0])[:3]}", "-m", "Siesta"],
     )
