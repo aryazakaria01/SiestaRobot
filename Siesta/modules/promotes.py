@@ -20,10 +20,11 @@
 import html
 
 from aiogram.utils.exceptions import ChatAdminRequired
+from telethon.errors import AdminRankEmojiNotAllowedError
+
 from Siesta import BOT_ID, bot
 from Siesta.decorator import register
 from Siesta.services.telethon import tbot
-from telethon.errors import AdminRankEmojiNotAllowedError
 
 from .utils.connections import chat_connection
 from .utils.language import get_strings_dec

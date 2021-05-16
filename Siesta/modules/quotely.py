@@ -23,10 +23,11 @@ import textwrap
 import urllib
 
 import emoji
-from Siesta.services.events import register
 from fontTools.ttLib import TTFont
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 from telethon.tl import functions, types
+
+from Siesta.services.events import register
 
 COLORS = [
     "#F07975",

@@ -20,10 +20,11 @@ import os
 from asyncio import sleep
 from datetime import datetime
 
-from Siesta.services.events import register
-from Siesta.services.telethon import tbot as client
 from requests import get, post
 from telethon.tl import functions, types
+
+from Siesta.services.events import register
+from Siesta.services.telethon import tbot as client
 
 
 def progress(current, total):

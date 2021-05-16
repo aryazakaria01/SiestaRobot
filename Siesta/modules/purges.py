@@ -19,10 +19,11 @@
 
 import asyncio
 
+from telethon.errors.rpcerrorlist import MessageDeleteForbiddenError
+
 from Siesta import bot
 from Siesta.decorator import register
 from Siesta.services.telethon import tbot
-from telethon.errors.rpcerrorlist import MessageDeleteForbiddenError
 
 from .utils.language import get_strings_dec
 from .utils.notes import BUTTONS
