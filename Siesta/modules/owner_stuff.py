@@ -24,12 +24,12 @@ import sys
 
 import rapidjson
 import requests
-from DaisyX import DAISY_VERSION, bot, dp
-from DaisyX.decorator import COMMANDS_ALIASES, REGISTRED_COMMANDS, register
-from DaisyX.modules import LOADED_MODULES
-from DaisyX.services.mongo import db, mongodb
-from DaisyX.services.redis import redis
-from DaisyX.services.telethon import tbot
+from Siesta import SIESTA_VERSION, bot, dp
+from Siesta.decorator import COMMANDS_ALIASES, REGISTRED_COMMANDS, register
+from Siesta.modules import LOADED_MODULES
+from Siesta.services.mongo import db, mongodb
+from Siesta.services.redis import redis
+from Siesta.services.telethon import tbot
 from Skem import skemmers
 
 from .utils.covert import convert_size
@@ -166,8 +166,8 @@ async def bot_stop(message):
 
 @register(cmds="restart", is_owner=True)
 async def restart_bot(message):
-    await message.reply("Daisy will be restarted...")
-    args = [sys.executable, "-m", "DaisyX"]
+    await message.reply("Siesta will be restarted...")
+    args = [sys.executable, "-m", "Siesta"]
     os.execl(sys.executable, *args)
 
 
@@ -185,7 +185,7 @@ async def upgrade(message):
             await m.edit_text("There's nothing to upgrade.")
         else:
             await m.edit_text("Restarting...")
-            args = [sys.executable, "-m", "DaisyX"]
+            args = [sys.executable, "-m", "Siesta"]
             os.execl(sys.executable, *args)
     else:
         await m.edit_text(
@@ -216,7 +216,7 @@ async def upload_file(message):
 
 @register(cmds="logs", is_op=True)
 async def upload_logs(message):
-    input_str = "logs/DaisyX.log"
+    input_str = "logs/Siesta.log"
     with open(input_str, "rb") as f:
         await tbot.send_file(message.chat.id, f, reply_to=message.message_id)
 
@@ -237,7 +237,7 @@ async def get_event(message):
 @register(cmds="stats", is_op=True)
 async def stats(message):
     if message.from_user.id in skemmers:
-        text = f"<b>Daisy {DAISY_VERSION} stats</b>\n"
+        text = f"<b>Siesta {SIESTA_VERSION} stats</b>\n"
 
         for module in [m for m in LOADED_MODULES if hasattr(m, "__stats__")]:
             text += await module.__stats__()
