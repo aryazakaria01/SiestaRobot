@@ -23,6 +23,7 @@ from contextlib import suppress
 from aiogram.types.inline_keyboard import InlineKeyboardButton, InlineKeyboardMarkup
 from aiogram.utils.callback_data import CallbackData
 from aiogram.utils.exceptions import MessageNotModified
+
 from Siesta.decorator import register
 from Siesta.modules.utils.disable import disableable_dec
 
@@ -84,10 +85,10 @@ async def get_start_func(message, strings, edit=False):
         ),
     )
     buttons.add(
-        InlineKeyboardButton(strings["btn_channel"], url="https://t.me/HayakaRyupdates"),
         InlineKeyboardButton(
-            strings["btn_group"], url="https://t.me/SiestaSupport"
+            strings["btn_channel"], url="https://t.me/HayakaRyupdates"
         ),
+        InlineKeyboardButton(strings["btn_group"], url="https://t.me/SiestaSupport"),
     )
     buttons.add(
         InlineKeyboardButton(

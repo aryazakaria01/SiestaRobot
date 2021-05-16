@@ -16,13 +16,14 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+from pymongo import MongoClient
+from telethon import *
+from telethon.tl import *
+
 from Siesta import BOT_ID
 from Siesta.config import get_str_key
 from Siesta.services.events import register
 from Siesta.services.telethon import tbot
-from pymongo import MongoClient
-from telethon import *
-from telethon.tl import *
 
 MONGO_DB_URI = get_str_key("MONGO_URI", required=True)
 client = MongoClient()
