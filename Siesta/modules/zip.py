@@ -20,11 +20,12 @@ import os
 import time
 import zipfile
 
+from telethon import types
+from telethon.tl import functions
+
 from Siesta import TEMP_DOWNLOAD_DIRECTORY
 from Siesta.services.events import register
 from Siesta.services.telethon import tbot as client
-from telethon import types
-from telethon.tl import functions
 
 
 async def is_register_admin(chat, user):

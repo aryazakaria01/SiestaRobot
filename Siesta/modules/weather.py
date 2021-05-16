@@ -20,9 +20,10 @@ import io
 import time
 
 import aiohttp
-from Siesta.config import get_str_key
 from telethon.tl import functions, types
 from telethon.tl.types import *
+
+from Siesta.config import get_str_key
 
 OPENWEATHERMAP_ID = get_str_key("OPENWEATHERMAP_ID", "")
 from Siesta.services.events import register

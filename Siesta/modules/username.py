@@ -16,11 +16,12 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+from telethon.errors.rpcerrorlist import YouBlockedUserError
+from telethon.tl import functions, types
+
 from Siesta.services.events import register as Siesta
 from Siesta.services.telethon import tbot
 from Siesta.services.telethonuserbot import ubot
-from telethon.errors.rpcerrorlist import YouBlockedUserError
-from telethon.tl import functions, types
 
 
 async def is_register_admin(chat, user):

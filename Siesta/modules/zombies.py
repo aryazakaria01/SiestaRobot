@@ -18,12 +18,13 @@
 
 from asyncio import sleep
 
-from Siesta import OWNER_ID
-from Siesta.services.telethon import tbot as client
 from telethon import events
 from telethon.errors import ChatAdminRequiredError, UserAdminInvalidError
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChannelParticipantsAdmins, ChatBannedRights
+
+from Siesta import OWNER_ID
+from Siesta.services.telethon import tbot as client
 
 # =================== CONSTANT ===================
 

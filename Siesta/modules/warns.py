@@ -28,6 +28,7 @@ from aiogram.utils.deep_linking import get_start_link
 from aiogram.utils.exceptions import MessageNotModified
 from babel.dates import format_timedelta
 from bson.objectid import ObjectId
+
 from Siesta import BOT_ID, bot
 from Siesta.decorator import register
 from Siesta.services.mongo import db
