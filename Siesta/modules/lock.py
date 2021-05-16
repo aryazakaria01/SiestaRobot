@@ -21,8 +21,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-from DaisyX.function.pluginhelpers import current_chat_permissions, member_permissions
-from DaisyX.services.pyrogram import pbot
+from Siesta.function.pluginhelpers import current_chat_permissions, member_permissions
+from Siesta.services.pyrogram import pbot
 from pyrogram import filters
 from pyrogram.errors.exceptions.bad_request_400 import ChatNotModified
 from pyrogram.types import ChatPermissions
