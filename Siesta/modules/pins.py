@@ -14,6 +14,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from aiogram.utils.exceptions import BadRequest
+
 from Siesta import bot
 from Siesta.decorator import register
 
