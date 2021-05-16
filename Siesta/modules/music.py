@@ -20,8 +20,8 @@ import io
 import os
 
 import lyricsgenius
-from DaisyX.config import get_str_key
-from DaisyX.services.pyrogram import pbot
+from Siesta.config import get_str_key
+from Siesta.services.pyrogram import pbot
 from pyrogram import filters
 from tswift import Song
 
