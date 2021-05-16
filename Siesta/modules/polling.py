@@ -16,10 +16,10 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from DaisyX import BOT_ID
-from DaisyX.config import get_str_key
-from DaisyX.services.events import register
-from DaisyX.services.telethon import tbot
+from Siesta import BOT_ID
+from Siesta.config import get_str_key
+from Siesta.services.events import register
+from Siesta.services.telethon import tbot
 from pymongo import MongoClient
 from telethon import *
 from telethon.tl import *
@@ -27,9 +27,9 @@ from telethon.tl import *
 MONGO_DB_URI = get_str_key("MONGO_URI", required=True)
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["DaisyX"]
+db = client["Siesta"]
 approved_users = db.approve
-dbb = client["DaisyX"]
+dbb = client["Siesta"]
 poll_id = dbb.pollid
 
 
