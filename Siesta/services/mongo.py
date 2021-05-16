@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+Siesta# This file is part of Daisy (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -16,8 +16,8 @@
 import asyncio
 import sys
 
-from DaisyX import log
-from DaisyX.config import get_int_key, get_str_key
+from Siesta import log
+from Siesta.config import get_int_key, get_str_key
 from motor import motor_asyncio
 from odmantic import AIOEngine
 from pymongo import MongoClient
