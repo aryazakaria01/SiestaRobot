@@ -18,10 +18,6 @@ import aiohttp
 import requests
 from bs4 import BeautifulSoup
 from countryinfo import CountryInfo
-from Siesta.config import get_str_key
-from Siesta.function.inlinehelper import *
-from Siesta.function.pluginhelpers import fetch, json_prettify
-from Siesta.services.pyrogram import pbot as app
 from faker import Faker
 from faker.providers import internet
 from PyDictionary import PyDictionary
@@ -36,6 +32,11 @@ from pyrogram.types import (
 from search_engine_parser import GoogleSearch
 from tswift import Song
 from youtubesearchpython import VideosSearch
+
+from Siesta.config import get_str_key
+from Siesta.function.inlinehelper import *
+from Siesta.function.pluginhelpers import fetch, json_prettify
+from Siesta.services.pyrogram import pbot as app
 
 OPENWEATHERMAP_ID = get_str_key("OPENWEATHERMAP_ID", "")
 TIME_API_KEY = get_str_key("TIME_API_KEY", required=False)
