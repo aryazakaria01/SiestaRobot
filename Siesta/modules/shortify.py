@@ -19,8 +19,8 @@
 import json
 
 import aiohttp
-from DaisyX.function.pluginhelpers import admins_only, get_text
-from DaisyX.services.pyrogram import pbot
+from Siesta.function.pluginhelpers import admins_only, get_text
+from Siesta.services.pyrogram import pbot
 from pyrogram import filters
 
 
