@@ -7,9 +7,10 @@
 # All rights reserved.
 
 
+from pyrogram import filters
+
 from Siesta.function.pluginhelpers import admins_only, get_text
 from Siesta.services.pyrogram import pbot
-from pyrogram import filters
 
 
 @pbot.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
