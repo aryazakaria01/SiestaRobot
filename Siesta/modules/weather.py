@@ -20,13 +20,13 @@ import io
 import time
 
 import aiohttp
-from DaisyX.config import get_str_key
+from Siesta.config import get_str_key
 from telethon.tl import functions, types
 from telethon.tl.types import *
 
 OPENWEATHERMAP_ID = get_str_key("OPENWEATHERMAP_ID", "")
-from DaisyX.services.events import register
-from DaisyX.services.telethon import tbot
+from Siesta.services.events import register
+from Siesta.services.telethon import tbot
 
 
 async def is_register_admin(chat, user):
