@@ -1,9 +1,10 @@
 import json
 
 import requests
+from telethon import types
+
 from Siesta.services.events import register
 from Siesta.services.telethon import tbot as client
-from telethon import types
 
 
 async def is_register_admin(chat, user):
