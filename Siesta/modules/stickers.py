@@ -25,12 +25,6 @@ from io import BytesIO
 import requests
 from aiogram.types.input_file import InputFile
 from bs4 import BeautifulSoup as bs
-from Siesta import bot
-from Siesta.decorator import register
-from Siesta.services.events import register as Siesta
-from Siesta.services.pyrogram import pbot
-from Siesta.services.telethon import tbot
-from Siesta.services.telethonuserbot import ubot
 from PIL import Image
 from pyrogram import filters
 from telethon import *
@@ -42,6 +36,13 @@ from telethon.tl.types import (
     InputStickerSetShortName,
     MessageMediaPhoto,
 )
+
+from Siesta import bot
+from Siesta.decorator import register
+from Siesta.services.events import register as Siesta
+from Siesta.services.pyrogram import pbot
+from Siesta.services.telethon import tbot
+from Siesta.services.telethonuserbot import ubot
 
 from .utils.disable import disableable_dec
 from .utils.language import get_strings_dec
@@ -227,7 +228,9 @@ async def _(event):
     first_name = user.first_name
     packname = f"{first_name}'s Sticker Vol.{pack}"
     packshortname = f"Siesta_stickers_{userid}"
-    kanga = await event.reply("Hello, This Sticker Looks Noice. Mind if Siesta steal it")
+    kanga = await event.reply(
+        "Hello, This Sticker Looks Noice. Mind if Siesta steal it"
+    )
     is_a_s = is_it_animated_sticker(reply_message)
     file_ext_ns_ion = "Stickers.png"
     file = await event.client.download_file(reply_message.media)
