@@ -20,9 +20,9 @@
 import html
 
 from aiogram.utils.exceptions import ChatAdminRequired
-from DaisyX import BOT_ID, bot
-from DaisyX.decorator import register
-from DaisyX.services.telethon import tbot
+from Siesta import BOT_ID, bot
+from Siesta.decorator import register
+from Siesta.services.telethon import tbot
 from telethon.errors import AdminRankEmojiNotAllowedError
 
 from .utils.connections import chat_connection
