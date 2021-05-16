@@ -3,6 +3,8 @@
 
 # Don't edit these lines
 
+from pyrogram import filters
+
 from Siesta.db.mongo_helpers.filterdb import (
     delete_filter,
     get_filter,
@@ -11,7 +13,6 @@ from Siesta.db.mongo_helpers.filterdb import (
 )
 from Siesta.function.pluginhelpers import member_permissions
 from Siesta.services.pyrogram import pbot as app
-from pyrogram import filters
 
 
 @app.on_message(filters.command("filter") & ~filters.edited & ~filters.private)
