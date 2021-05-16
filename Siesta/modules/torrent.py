@@ -17,8 +17,8 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import requests
-from DaisyX.services.mongo import mongodb as db
-from DaisyX.services.telethon import tbot
+from Siesta.services.mongo import mongodb as db
+from Siesta.services.telethon import tbot
 from telethon import *
 from telethon import events
 from telethon.tl import functions, types
@@ -69,7 +69,7 @@ async def _(event):
     await tbot.edit_message(
         chatid,
         msgid,
-        "Daisy found some torrents for you. Take a look 👇",
+        "Siesta found some torrents for you. Take a look 👇",
         buttons=[
             [
                 Button.inline(
@@ -189,7 +189,7 @@ async def paginate_prevtorrent(event):
     try:
         results = requests.get(url).json()
     except Exception as e:
-        await event.reply("Sorry, Daisy Cant found any torrents for that word")
+        await event.reply("Sorry, Siesta Cant found any torrents for that word")
         print(e)
         return
     vector = len(results)
@@ -331,7 +331,7 @@ async def torrentstop(event):
     await tbot.edit_message(
         chatid,
         msgid,
-        "Thanks for using.\n❤️ from [Daisy X](t.me/DaisyXBot) !",
+        "Thanks for using.\n❤️ from [Siesta X](t.me/SiestaRobot) !",
         link_preview=False,
     )
 
