@@ -27,8 +27,8 @@ import aiofiles
 import aiohttp
 import wget
 import youtube_dl
-from DaisyX.function.pluginhelpers import get_text, progress
-from DaisyX.services.pyrogram import pbot as Client
+from Siesta.function.pluginhelpers import get_text, progress
+from Siesta.services.pyrogram import pbot as Client
 from pyrogram import filters
 from pyrogram.types import Message
 from Python_ARQ import ARQ
@@ -50,7 +50,7 @@ async def ytmusic(client, message: Message):
     global dl_limit
     if dl_limit >= 4:
         await message.reply_text(
-            "Daisy's server busy due to too many downloads, try again after sometime."
+            "Siesta's server busy due to too many downloads, try again after sometime."
         )
         return
     pablo = await client.send_message(
@@ -173,7 +173,7 @@ async def jssong(_, message):
         return
     if dl_limit >= 3:
         await message.reply_text(
-            "Daisy's server busy due to too many downloads, try again after sometime."
+            "Siesta's server busy due to too many downloads, try again after sometime."
         )
         return
     if is_downloading:
@@ -219,7 +219,7 @@ async def deezsong(_, message):
         return
     if dl_limit >= 3:
         await message.reply_text(
-            "Daisy's server busy due to too many downloads, try again after sometime."
+            "Siesta's server busy due to too many downloads, try again after sometime."
         )
         return
     is_downloading = True
@@ -255,7 +255,7 @@ async def ytmusic(client, message: Message):
     global dl_limit
     if dl_limit >= 4:
         await message.reply_text(
-            "Daisy s server busy due to too many downloads, try again after sometime."
+            "Siesta s server busy due to too many downloads, try again after sometime."
         )
         return
     urlissed = get_text(message)
