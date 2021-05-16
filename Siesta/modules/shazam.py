@@ -2,8 +2,8 @@ import os
 from json import JSONDecodeError
 
 import requests
-from DaisyX.function.pluginhelpers import admins_only, edit_or_reply, fetch_audio
-from DaisyX.services.pyrogram import pbot
+from Siesta.function.pluginhelpers import admins_only, edit_or_reply, fetch_audio
+from Siesta.services.pyrogram import pbot
 
 # import ffmpeg
 from pyrogram import filters
@@ -45,7 +45,7 @@ async def shazamm(client, message):
     messageo = f"""<b>Song Shazamed.</b>
 <b>Song Name : </b>{title}
 <b>Song By : </b>{by}
-<u><b>Identified Using @DaisyXBot - Join our support @DaisySupport_Official</b></u>
+<u><b>Identified Using @SiestaRobot - Join our support @SiestaSupport</b></u>
 <i>Powered by @FridayOT</i>
 """
     await client.send_photo(message.chat.id, image, messageo, parse_mode="HTML")
