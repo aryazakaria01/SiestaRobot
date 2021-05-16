@@ -16,10 +16,6 @@ from random import randint, randrange, uniform
 import emoji
 import nltk
 from cowpy import cow
-from Siesta import *
-from Siesta.services.events import register
-from Siesta.services.telethon import tbot
-from Siesta.services.telethonuserbot import ubot
 from fontTools.ttLib import TTFont
 from PIL import Image, ImageDraw, ImageEnhance, ImageFont, ImageOps
 from selenium import webdriver
@@ -28,6 +24,11 @@ from telethon import *
 from telethon.tl import functions
 from telethon.tl.types import *
 from zalgo_text import zalgo
+
+from Siesta import *
+from Siesta.services.events import register
+from Siesta.services.telethon import tbot
+from Siesta.services.telethonuserbot import ubot
 
 nltk.download("punkt")
 nltk.download("averaged_perceptron_tagger")
