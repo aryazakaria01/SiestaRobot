@@ -20,8 +20,8 @@
 import re
 
 from aiogram.dispatcher.filters import CommandStart
-from DaisyX.decorator import register
-from DaisyX.services.mongo import db
+from Siesta.decorator import register
+from Siesta.services.mongo import db
 
 from .utils.connections import chat_connection
 from .utils.disable import disableable_dec
