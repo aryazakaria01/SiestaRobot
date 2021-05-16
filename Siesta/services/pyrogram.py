@@ -29,8 +29,6 @@ pbot = Client(
     api_id=APP_ID,
     api_hash=APP_HASH,
     bot_token=TOKEN,
-    workers=3,
-    sleep_threshold=5,
 )
 
 # disable logging for pyrogram [not for ERROR logging]
