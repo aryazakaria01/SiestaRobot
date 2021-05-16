@@ -20,7 +20,7 @@ from asyncio import sleep
 from datetime import datetime
 
 import aiohttp
-from DaisyX.services.pyrogram import pbot
+from Siesta.services.pyrogram import pbot
 from pyrogram import filters
 from pyrogram.errors import PeerIdInvalid
 
