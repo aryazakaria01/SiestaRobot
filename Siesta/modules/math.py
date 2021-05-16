@@ -16,7 +16,7 @@ import json
 import math
 
 import requests
-from DaisyX.decorator import register
+from Siesta.decorator import register
 
 from .utils.disable import disableable_dec
 from .utils.message import get_args_str
