@@ -22,9 +22,9 @@ import os
 from datetime import datetime
 
 import requests
-from DaisyX.config import get_str_key
-from DaisyX.services.events import register
-from DaisyX.services.telethon import tbot
+from Siesta.config import get_str_key
+from Siesta.services.events import register
+from Siesta.services.telethon import tbot
 from telethon import types
 from telethon.tl import functions
 
@@ -93,7 +93,7 @@ async def _(event):
         await event.reply("Background Removed in {} seconds".format(ms))
     else:
         await event.reply(
-            "remove.bg API returned Errors. Please report to @DaisySupport_Official\n`{}".format(
+            "remove.bg API returned Errors. Please report to @SiestaSupport\n`{}".format(
                 output_file_name.content.decode("UTF-8")
             )
         )
