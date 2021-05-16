@@ -31,11 +31,11 @@ from aiogram.utils.exceptions import (
     MessageNotModified,
 )
 from babel.dates import format_datetime
-from DaisyX import bot
-from DaisyX.decorator import register
-from DaisyX.services.mongo import db
-from DaisyX.services.redis import redis
-from DaisyX.services.telethon import tbot
+from Siesta import bot
+from Siesta.decorator import register
+from Siesta.services.mongo import db
+from Siesta.services.redis import redis
+from Siesta.services.telethon import tbot
 from pymongo import ReplaceOne
 from telethon.errors.rpcerrorlist import MessageDeleteForbiddenError
 
@@ -765,7 +765,7 @@ __mod_name__ = "Notes"
 
 __help__ = """
 Sometimes you need to save some data, like text or pictures. With notes, you can save any types of Telegram's data in your chats.
-Also notes perfectly working in PM with Daisy.
+Also notes perfectly working in PM with Siesta.
 
 <b>Available commands:</b>
 - /save (name) (data): Saves the note.
@@ -809,7 +809,7 @@ Every note can contain special settings, for example you can change formatting m
 <code>%PREVIEW</code>: Enables the links preview in saved note
 
 <b>Saving notes from other Marie style bots:</b>
-Daisy can save notes from other bots, just reply /save on the saved message from another bot, saving pictures and buttons supported aswell.
+Siesta can save notes from other bots, just reply /save on the saved message from another bot, saving pictures and buttons supported aswell.
 
 <b>Retrieving notes without the formatting:</b>
 To retrieve a note without the formatting, use <code>/get (name) raw</code> or <code>/get (name) noformat</code>
