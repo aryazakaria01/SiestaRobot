@@ -18,15 +18,15 @@
 
 
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from DaisyX import BOT_ID
-from DaisyX.function.telethonbasics import is_admin
-from DaisyX.services.sql.night_mode_sql import (
+from Siesta import BOT_ID
+from Siesta.function.telethonbasics import is_admin
+from Siesta.services.sql.night_mode_sql import (
     add_nightmode,
     get_all_chat_id,
     is_nightmode_indb,
     rmnightmode,
 )
-from DaisyX.services.telethon import tbot
+from Siesta.services.telethon import tbot
 from telethon import events, functions
 from telethon.tl.types import ChatBannedRights
 
@@ -112,7 +112,7 @@ async def job_close():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                "`12:00 Am, Group Is Closing Till 6 Am. Night Mode Started !` \n**Powered By @DaisyXbot**",
+                "`12:00 Am, Group Is Closing Till 6 Am. Night Mode Started !` \n**Powered By @SiestaRobot**",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
@@ -142,7 +142,7 @@ async def job_open():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                "`06:00 Am, Group Is Opening.`\n**Powered By @DaisyXBot**",
+                "`06:00 Am, Group Is Opening.`\n**Powered By @SiestaRobot**",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
