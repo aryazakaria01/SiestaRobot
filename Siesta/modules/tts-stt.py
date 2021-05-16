@@ -21,11 +21,12 @@ import os
 from datetime import datetime
 
 import requests
+from gtts import gTTS, gTTSError
+from telethon.tl import functions, types
+
 from Siesta.config import get_str_key
 from Siesta.services.events import register
 from Siesta.services.telethon import tbot
-from gtts import gTTS, gTTSError
-from telethon.tl import functions, types
 
 IBM_WATSON_CRED_PASSWORD = get_str_key("IBM_WATSON_CRED_PASSWORD", required=False)
 IBM_WATSON_CRED_URL = get_str_key("IBM_WATSON_CRED_URL", required=False)
