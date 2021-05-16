@@ -23,7 +23,7 @@ import textwrap
 import urllib
 
 import emoji
-from DaisyX.services.events import register
+from Siesta.services.events import register
 from fontTools.ttLib import TTFont
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 from telethon.tl import functions, types
