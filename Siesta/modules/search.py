@@ -23,13 +23,14 @@ import urllib.request
 import bs4
 import requests
 from bs4 import BeautifulSoup
-from Siesta.modules.utils.fetch import fetch
-from Siesta.services.events import register
-from Siesta.services.pyrogram import pbot as app
 from pyrogram import filters
 
 # This plugin is ported from https://github.com/thehamkercat/WilliamButcherBot
 from search_engine_parser import GoogleSearch
+
+from Siesta.modules.utils.fetch import fetch
+from Siesta.services.events import register
+from Siesta.services.pyrogram import pbot as app
 
 ARQ = "https://thearq.tech/"
 
