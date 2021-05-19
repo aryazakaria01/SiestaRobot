@@ -118,7 +118,7 @@ STRINGS:
     #/delwarns
     purged_warns: "{admin} reset <code>{num}</code> warns of {user} in <b>{chat_title}</b>!"
     usr_no_wrn: "{user} はリセットする警告を持っていません。"
-    rst_wrn_sofi: 'Daisyは、リセットするように警告することがありませんでした。'
+    rst_wrn_sofi: 'Siestaは、リセットするように警告することがありませんでした。'
     not_digit: 警告制限は数字でなければなりません！
     #/warnmode
     same_mode: これは現在のモードです！どうやって変更できますか？
@@ -164,17 +164,17 @@ STRINGS:
     cant_promote_yourself: "自分自身を昇進させることはできません。"
     emoji_not_allowed: "申し訳ありませんが、管理者の役割は絵文字を持つことができません。 :explosed_face:"
   pm_menu:
-    start_hi_group: 'こんにちは！私の名前はDaisy'
-    start_hi: "こんにちは！私の名前はDaisyです。効率的な方法であなたのグループを管理するのを助けます！"
+    start_hi_group: 'こんにちは！私の名前はSiesta'
+    start_hi: "こんにちは！私の名前はSiestaです。効率的な方法であなたのグループを管理するのを助けます！"
     btn_source: "📦 ソース コード"
     btn_help: "❔ ヘルプ"
     btn_lang: "🇷🇺 Language"
-    btn_channel: "Daisy News"
-    btn_group: "👥 Daisy Support"
+    btn_channel: "Siesta News"
+    btn_group: "👥 Siesta Support"
     btn_group_help: "ヘルプのためにクリックしてください!"
     back: 戻る
     #/help
-    help_header: "ねえ！ 私の名前は<b>Daisy</b>です。 私はグループ管理ボットです。ここでは、グループ内を移動して順序を維持するのに役立ちます。\n洪水調節、警告システム、メモ管理システム、さらには特定のキーワードに対する事前に決められた返信など、便利な機能がたくさんあります。"
+    help_header: "ねえ！ 私の名前は<b>Siesta</b>です。 私はグループ管理ボットです。ここでは、グループ内を移動して順序を維持するのに役立ちます。\n洪水調節、警告システム、メモ管理システム、さらには特定のキーワードに対する事前に決められた返信など、便利な機能がたくさんあります。"
     click_btn: ここをクリック
   disable:
     #/disableable
@@ -488,31 +488,31 @@ STRINGS:
     big_file: サポートされているインポートファイルは50 MB未満です！
     started_importing: インポートを開始しました。お待ちください...
     bad_file: ファイルが正しくありません! <code>'general'</code> 列が期待されています。
-    file_version_so_new: エクスポートされたファイルのバージョンは現在サポートされているDaisyより新しいです!
+    file_version_so_new: エクスポートされたファイルのバージョンは現在サポートされているSiestaより新しいです!
     imports_locked: インポートが再び使用されるまで、 %s をお待ちください！
     import_done: インポート完了！
   restrictions:
     user_not_in_chat: 僅用於中文
     #Kicks
-    kick_DaisyX: 私をキックしようとする代わりに、あなたはより良いあなたの時間を過ごすことができます.
+    kick_Siesta: 私をキックしようとする代わりに、あなたはより良いあなたの時間を過ごすことができます.
     kick_admin: 管理者をキックすることは最良のアイデアではありません。
     kick_self: あなたが自己をキックしたいなら、このチャットから去ってください。 私は、自罰でこれらの哀れな試みを見るより、むしろあなたに会わないでしょう。
     user_kicked: "{user} は {admin} で {chat_name} にキックされました。"
     #Mutes
-    mute_DaisyX: 実際には、私は代わりにあなたを黙らせて喜んでいます。
+    mute_Siesta: 実際には、私は代わりにあなたを黙らせて喜んでいます。
     mute_admin: 管理者を黙らせられると思ったら間違っています！
     mute_self: あなたが自己をキックしたいなら、このチャットから去ってください。 私は、自罰でこれらの哀れな試みを見るより、むしろあなたに会わないでしょう。
     user_muted: "{user} は {admin} で {chat_name} によってミュートされました。"
-    unmute_DaisyX: 実際は、私はミュートされていません。
+    unmute_Siesta: 実際は、私はミュートされていません。
     unmute_admin: いや、最初に彼をミュートしてみてください！
     unmute_self: 最初にミュートしましょうか。
     user_unmuted: "{user} は {admin} で {chat_name} によってミュート解除されました。"
     #Bans
-    ban_DaisyX: いいえ、私はそれをしません! チャットの作成者にそれを行うように頼みます!
+    ban_Siesta: いいえ、私はそれをしません! チャットの作成者にそれを行うように頼みます!
     ban_admin: ハハハ、先に <code>/degrete</code> をやろう。
     ban_self: なぜ自分を禁止しようとしているのですか。
     user_banned: "{user} は {admin} で {chat_name} によってBANされました。"
-    unban_DaisyX: 実際、私は禁止されていません。
+    unban_Siesta: 実際、私は禁止されていません。
     unban_admin: いや、最初に彼を禁止してみてください!
     unban_self: 私はあなたを最初に禁止する必要がありますか?
     user_unband: "{user} は {admin} で {chat_name} によってBANを解除されました。"
@@ -554,7 +554,7 @@ STRINGS:
   #success_remove_rules_note: "Successfully removed rules note in <b>{}</b>."
   greetings:
     default_welcome: "Welcome {mention}! How are you?"
-    thank_for_add: "Thanks for adding me to your group! Take a look at /help and follow my news channel @DaisyXUpdates."
+    thank_for_add: "Thanks for adding me to your group! Take a look at /help and follow my news channel @HayakaRyuUpdates."
     default_security_note: "ようこそ {mention}! ボタンを押して、人間としての認証を行ってください!"
     bool_invalid_arg: 引数が無効です。 <code>が</code>/<code></code> に期待されています。
     #/setwelcome
