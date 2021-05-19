@@ -36,8 +36,8 @@ from Siesta.services.pyrogram import pbot as siesta
 translator = google_translator()
 
 
-async def lunaQuery(query):
-    luna = await arq.luna(query)
+async def lunaQuery(query: str, user_id: int):
+    luna = await arq.luna(query, user_id)
     return luna.result
 
 
@@ -170,7 +170,9 @@ async def hmm(client, message):
         test = msg
         test = test.replace("siesta", "Aco")
         test = test.replace("Siesta", "Aco")
-        response = await lunaQuery(test)
+        response = await lunaQuery(
+            test, message.from_user.id if message.from_user else 0
+        )
         response = response.replace("Aco", "Siesta")
         response = response.replace("aco", "Siesta")
 
@@ -224,8 +226,9 @@ async def hmm(client, message):
 
         test = test.replace("siesta", "Aco")
         test = test.replace("Siesta", "Aco")
-        response = await lunaQuery(test)
-
+        response = await lunaQuery(
+            test, message.from_user.id if message.from_user else 0
+        )
         response = response.replace("Aco", "Siesta")
         response = response.replace("aco", "Siesta")
         pro = response
@@ -293,8 +296,7 @@ async def inuka(client, message):
     test = test.replace("siesta", "Aco")
     test = test.replace("Siesta", "Aco")
 
-    response = await lunaQuery(test)
-
+    response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
     response = response.replace("Aco", "Siesta")
     response = response.replace("aco", "Siesta")
 
@@ -309,7 +311,7 @@ async def inuka(client, message):
 
 
 @siesta.on_message(
-    filters.regex("Siesta|siesta|SiestaRobot|SiestaBot|Sies")
+    filters.regex("Siesta|siesta|SiestaBot|SiestaRobot|siestabot")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -364,7 +366,7 @@ async def inuka(client, message):
 
     test = test.replace("siesta", "Aco")
     test = test.replace("Siesta", "Aco")
-    response = await lunaQuery(test)
+    response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
     response = response.replace("Aco", "Siesta")
     response = response.replace("aco", "Siesta")
 
@@ -384,12 +386,13 @@ async def inuka(client, message):
 __help__ = """
 <b> Chatbot </b>
 SIESTA AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
+
  - /chatbot [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
  - /chatbot EN : Enables English only chatbot
  
  
 <b> Assistant </b>
- - /ask [question]: Ask question from siesta
+ - /ask [question]: Ask question from Siesta
  - /ask [reply to voice note]: Get voice reply
  
 """
