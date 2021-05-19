@@ -118,7 +118,7 @@ STRINGS:
     #/delwarns
     purged_warns: "{admin} menyetel ulang <code>{num}</code> peringatan pada {user} di <b>{chat_title}</b>!"
     usr_no_wrn: "{user} tidak memiliki peringatan untuk di setel ulang."
-    rst_wrn_sofi: 'Daisy tidak pernah diperingati untuk di setel ulang.'
+    rst_wrn_sofi: 'Siesta tidak pernah diperingati untuk di setel ulang.'
     not_digit: Batas peringatan harus berupa angka!
     #/warnmode
     same_mode: Berikut ini adalah mode saat ini! Bagaimana saya akan mengubahnya?
@@ -163,17 +163,17 @@ STRINGS:
     cant_promote_yourself: "Anda tidak dapat mempromosikan diri anda sendiri."
     emoji_not_allowed: "Mohon maaf, tetapi gelar admin tidak dapat memiliki sebuah emoji 😞"
   pm_menu:
-    start_hi_group: 'Hai yang disana! Nama saya Daisy'
-    start_hi: "Hai yang disana! Nama saya <b>Daisy.</b>\nSaya bisa membantu mengatur grup dengan fitur-fitur yang berguna, jangan ragu untuk menambahkan saya ke grup anda!"
+    start_hi_group: 'Hai yang disana! Nama saya Siesta'
+    start_hi: "Hai yang disana! Nama saya <b>Siesta.</b>\nSaya bisa membantu mengatur grup dengan fitur-fitur yang berguna, jangan ragu untuk menambahkan saya ke grup anda!"
     btn_source: "📜 Kode sumber"
     btn_help: "❔ Bantuan"
     btn_lang: "Bahasa id"
-    btn_channel: "🙋‍♀️ Berita Daisy"
-    btn_group: "👥 Daisy Support"
+    btn_channel: "🙋‍♀️ Berita Siesta"
+    btn_group: "👥 Siesta Support"
     btn_group_help: "Tekan saya untuk mendapatkan bantuan!"
     back: Kembali
     #/help
-    help_header: "Hai! Nama saya <b>Daisy</b>. Saya adalah seorang bot manajemen grup, disini untuk membantu anda menjaga ketertiban dalam grup anda! Saya memiliki banyak fitur berguna, seperti pengendalian pesan banjir, sistem peringatan, sistem catatan, dan bahkan balasan yang telah ditentukan sebelumnya pada kata kunci tertentu."
+    help_header: "Hai! Nama saya <b>Siesta</b>. Saya adalah seorang bot manajemen grup, disini untuk membantu anda menjaga ketertiban dalam grup anda! Saya memiliki banyak fitur berguna, seperti pengendalian pesan banjir, sistem peringatan, sistem catatan, dan bahkan balasan yang telah ditentukan sebelumnya pada kata kunci tertentu."
     click_btn: Tekan disini
   disable:
     #/disableable
@@ -487,31 +487,31 @@ STRINGS:
     big_file: Only files under 50 MB are supported!
     started_importing: Importing started! Please wait...
     bad_file: Bad file! Expected <code>'general'</code> column.
-    file_version_so_new: Exported file version is newer than what Daisy currently supports!
+    file_version_so_new: Exported file version is newer than what Siesta currently supports!
     imports_locked: Please wait %s before using imports again!
     import_done: Import done!
   restrictions:
     user_not_in_chat: User is not in this chat!
     #Kicks
-    kick_DaisyX: Instead of trying kick me you could spend your time better. Thats just boring.
+    kick_Siesta: Instead of trying kick me you could spend your time better. Thats just boring.
     kick_admin: Kicking admin is not best idea thought.
     kick_self: If you want to kick yourself - just leave this chat. I would rather not see you than look at these pathetic attempts at self-punishment.
     user_kicked: "{user} was kicked by {admin} in {chat_name}."
     #Mutes
-    mute_DaisyX: Actually, I'll be happy to shut up you instead.
+    mute_Siesta: Actually, I'll be happy to shut up you instead.
     mute_admin: If you think you can shut up an admin, you are wrong!
     mute_self: If you want to mute yourself - just stop talking! Better to thought a fool than open your mouth and remove all doubt.
     user_muted: "{user} was muted by {admin} in {chat_name}."
-    unmute_DaisyX: Actually, I'm not muted.
+    unmute_Siesta: Actually, I'm not muted.
     unmute_admin: Haha no, try muting him first!
     unmute_self: Should I mute you first?
     user_unmuted: "{user} was unmuted by {admin} in {chat_name}."
     #Bans
-    ban_DaisyX: No, I won't do it! Ask the chat creator to do it!
+    ban_Siesta: No, I won't do it! Ask the chat creator to do it!
     ban_admin: Haha, let's <code>/demote</code> him first.
     ban_self: Why are you trying to ban yourself?
     user_banned: "{user} was banned by {admin} in {chat_name}."
-    unban_DaisyX: Actually, I'm not banned.
+    unban_Siesta: Actually, I'm not banned.
     unban_admin: Haha no, try banning him first!
     unban_self: Should I ban you first?
     user_unband: "{user} was unbanned by {admin} in {chat_name}."
@@ -553,7 +553,7 @@ STRINGS:
   #success_remove_rules_note: "Successfully removed rules note in <b>{}</b>."
   greetings:
     default_welcome: "Welcome {mention}! How are you?"
-    thank_for_add: "Thanks for adding me to your group! Take a look at /help and follow my news channel @DaisyXUpdates."
+    thank_for_add: "Thanks for adding me to your group! Take a look at /help and follow my news channel @HayakaRyuUpdates."
     default_security_note: "Welcome {mention}! Please press button below to verify yourself as human!"
     bool_invalid_arg: Invalid argument, expected <code>on</code>/<code>off</code>.
     #/setwelcome
