@@ -134,7 +134,7 @@ STRINGS:
     # /delwarns
     purged_warns: "{admin} reset <code>{num}</code> warns of {user} in <b>{chat_title}</b>!"
     usr_no_wrn: "{user} doesn't have any warns to reset."
-    rst_wrn_sofi: 'Daisy never had warns to reset.'
+    rst_wrn_sofi: 'Siesta never had warns to reset.'
     not_digit: Warnlimits should be digits!
 
     # /warnmode
@@ -186,18 +186,18 @@ STRINGS:
     emoji_not_allowed: "I'm sorry, but admin roles can't have emojis 😞"
 
   pm_menu:
-    start_hi_group: 'Hey there! My name is Daisy'
-    start_hi: "Hey there! My name is <b>Daisy.</b>\nI can help manage your groups with useful features, feel free to add me to your groups!"
+    start_hi_group: 'Hey there! My name is Siesta'
+    start_hi: "Hey there! My name is <b>Siesta.</b>\nI can help manage your groups with useful features, feel free to add me to your groups!"
     btn_source: "📜 Source code"
     btn_help: "❔ Help"
     btn_lang: "🇺🇸 Language"
-    btn_channel: "🙋‍♀️ Daisy News"
-    btn_group: "👥 Daisy Support"
+    btn_channel: "🙋‍♀️ Siesta News"
+    btn_group: "👥 Siesta Support"
     btn_group_help: "Click me for help!"
     back: "🏃‍♂️ Back"
 
     # /help
-    help_header: "Hi Boss! I'm <b>Daisy</b>. An anime themed super powerful group management bot with many handy tools. So why are you waiting. Let me to assist you"
+    help_header: "Hi Boss! I'm <b>Siesta</b>. An anime themed super powerful group management bot with many handy tools. So why are you waiting. Let me to assist you"
     click_btn: Click here
 
   disable:
@@ -541,34 +541,34 @@ STRINGS:
     big_file: Only files under 50 MB are supported!
     started_importing: Importing started! Please wait...
     bad_file: Bad file! Expected <code>'general'</code> column.
-    file_version_so_new: Exported file version is newer than what Daisy currently supports!
+    file_version_so_new: Exported file version is newer than what Siesta currently supports!
     imports_locked: Please wait %s before using imports again!
     import_done: Import done!
   restrictions:
     user_not_in_chat: User is not in this chat!
 
     # Kicks
-    kick_DaisyX: Instead of trying kick me you could spend your time better. Thats just boring.
+    kick_Siesta: Instead of trying kick me you could spend your time better. Thats just boring.
     kick_admin: Kicking admin is not best idea thought.
     kick_self: If you want to kick yourself - just leave this chat. I would rather not see you than look at these pathetic attempts at self-punishment.
     user_kicked: "{user} was kicked by {admin} in {chat_name}."
 
     # Mutes
-    mute_DaisyX: Actually, I'll be happy to shut up you instead.
+    mute_Siesta: Actually, I'll be happy to shut up you instead.
     mute_admin: If you think you can shut up an admin, you are wrong!
     mute_self: If you want to mute yourself - just stop talking! Better to thought a fool than open your mouth and remove all doubt.
     user_muted: "{user} was muted by {admin} in {chat_name}."
-    unmute_DaisyX: Actually, I'm not muted.
+    unmute_Siesta: Actually, I'm not muted.
     unmute_admin: Haha no, try muting him first!
     unmute_self: Should I mute you first?
     user_unmuted: "{user} was unmuted by {admin} in {chat_name}."
 
     # Bans
-    ban_DaisyX: No, I won't do it! Ask the chat creator to do it!
+    ban_Siesta: No, I won't do it! Ask the chat creator to do it!
     ban_admin: Haha, let's <code>/demote</code> him first.
     ban_self: Why are you trying to ban yourself?
     user_banned: "{user} was banned by {admin} in {chat_name}."
-    unban_DaisyX: Actually, I'm not banned.
+    unban_Siesta: Actually, I'm not banned.
     unban_admin: Haha no, try banning him first!
     unban_self: Should I ban you first?
     user_unband: "{user} was unbanned by {admin} in {chat_name}."
@@ -616,7 +616,7 @@ STRINGS:
     # success_remove_rules_note: "Successfully removed rules note in <b>{}</b>."
   greetings:
     default_welcome: "Welcome {mention}! How are you?"
-    thank_for_add: "Thanks for adding me to your group! Take a look at /help and follow my news channel @DaisyXUpdates."
+    thank_for_add: "Thanks for adding me to your group! Take a look at /help and follow my news channel @HayakaRyuUpdates."
     default_security_note: "Welcome {mention}! Please press button below to verify yourself as human!"
 
     bool_invalid_arg: Invalid argument, expected <code>on</code>/<code>off</code>.
