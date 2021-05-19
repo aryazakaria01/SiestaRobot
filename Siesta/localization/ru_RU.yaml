@@ -118,7 +118,7 @@ STRINGS:
     #/delwarns
     purged_warns: "{admin} удалил <code>{num}</code> предупреждений у {user} в <b>{chat_title}</b>!"
     usr_no_wrn: "У {user} пока нет предупреждений."
-    rst_wrn_sofi: 'У Daisy никогда не было предупреждений для сброса.'
+    rst_wrn_sofi: 'У Siesta никогда не было предупреждений для сброса.'
     not_digit: Лимит предупреждений должен быть цифрами!
     #/warnmode
     same_mode: Это текущий режим! Как изменить его?
@@ -164,17 +164,17 @@ STRINGS:
     cant_promote_yourself: "Вы не можете повысить себя."
     emoji_not_allowed: "Извините, но роли администратора не могут иметь эмодзи 😞"
   pm_menu:
-    start_hi_group: 'Привет! Меня зовут Daisy'
+    start_hi_group: 'Привет! Меня зовут Siesta'
     start_hi: "Привет! Меня зовут Sophie. Я помогу вам эффективно управлять вашей группой!"
     btn_source: "📜 Source code"
     btn_help: "❔ Помощь"
     btn_lang: "🇷🇺 Язык"
-    btn_channel: "🙋‍♀️ Новости Daisy"
-    btn_group: "👥 Daisy Support"
+    btn_channel: "🙋‍♀️ Новости Siesta"
+    btn_group: "👥 Siesta Support"
     btn_group_help: "Click me for help!"
     back: Назад
     #/help
-    help_header: "Привет! Меня зовут <b>Daisy</b>. Я бот для управления группами, здесь, чтобы помочь вам передвигаться и поддерживать порядок в ваших группах!\nУ меня есть множество удобных функций, таких как борьба с наводнениями, система предупреждений, система ведения заметок и даже заранее определенные ответы на определенные ключевые слова."
+    help_header: "Привет! Меня зовут <b>Siesta</b>. Я бот для управления группами, здесь, чтобы помочь вам передвигаться и поддерживать порядок в ваших группах!\nУ меня есть множество удобных функций, таких как борьба с наводнениями, система предупреждений, система ведения заметок и даже заранее определенные ответы на определенные ключевые слова."
     click_btn: Нажмите сюда
   disable:
     #/disableable
@@ -484,31 +484,31 @@ STRINGS:
     big_file: Only files under 50 MB are supported!
     started_importing: Импорт начался! Пожалуйста, подождите...
     bad_file: Некорректный файл! Ожидался столбец <code>'Общие'</code>.
-    file_version_so_new: Exported file version is newer than what Daisy currently supports!
+    file_version_so_new: Exported file version is newer than what Siesta currently supports!
     imports_locked: Please wait %s before using imports again!
     import_done: Импорт завершён!
   restrictions:
     user_not_in_chat: User is not in this chat!
     #Kicks
-    kick_DaisyX: Instead of trying kick me you could spend your time better. Thats just boring.
+    kick_Siesta: Instead of trying kick me you could spend your time better. Thats just boring.
     kick_admin: Выкинуть админа — это не лучшая идея.
     kick_self: If you want to kick yourself - just leave this chat. I would rather not see you than look at these pathetic attempts at self-punishment.
     user_kicked: "{user} был кикнут {admin} в {chat_name}."
     #Mutes
-    mute_DaisyX: Actually, I'll be happy to shut up you instead.
+    mute_Siesta: Actually, I'll be happy to shut up you instead.
     mute_admin: If you think you can shut up an admin, you are wrong!
     mute_self: If you want to mute yourself - just stop talking! Better to thought a fool than open your mouth and remove all doubt.
     user_muted: "{user} был заглушён пользователем {admin} в {chat_name}."
-    unmute_DaisyX: Actually, I'm not muted.
+    unmute_Siesta: Actually, I'm not muted.
     unmute_admin: Haha no, try muting him first!
     unmute_self: Может я сначала заткну тебя?
     user_unmuted: "{user} был размучен пользователем {admin} в {chat_name}."
     #Bans
-    ban_DaisyX: No, I won't do it! Ask the chat creator to do it!
+    ban_Siesta: No, I won't do it! Ask the chat creator to do it!
     ban_admin: Хах, давай сначала сделаем ему <code>/demote</code>.
     ban_self: Почему ты пытаешься забанить сам себя?
     user_banned: "{user} был забанен пользователем {admin} в {chat_name}."
-    unban_DaisyX: Actually, I'm not banned.
+    unban_Siesta: Actually, I'm not banned.
     unban_admin: Haha no, try banning him first!
     unban_self: Может сначала я забаню тебя?
     user_unband: "{user} был разбанен {admin} в {chat_name}."
@@ -550,7 +550,7 @@ STRINGS:
   #success_remove_rules_note: "Successfully removed rules note in <b>{}</b>."
   greetings:
     default_welcome: "Welcome {mention}! How are you?"
-    thank_for_add: "Thanks for adding me to your group! Take a look at /help and follow my news channel @DaisyXUpdates."
+    thank_for_add: "Thanks for adding me to your group! Take a look at /help and follow my news channel @HauakaRyuUpdates."
     default_security_note: "Welcome {mention}! Please press button below to verify yourself as human!"
     bool_invalid_arg: Недопустимый аргумент, ожидается <code>on</code> (включить)/<code>off</code> (выключить).
     #/setwelcome
