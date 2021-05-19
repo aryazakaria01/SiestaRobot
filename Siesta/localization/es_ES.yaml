@@ -118,7 +118,7 @@ STRINGS:
     #/delwarns
     purged_warns: "{admin} restableció <code>{num}</code> advertencias a {user} en <b>{chat_title}</b>!"
     usr_no_wrn: "{user} aún no tiene ninguna advertencia."
-    rst_wrn_sofi: 'Daisy nunca ha tenido advertencias para reiniciar.'
+    rst_wrn_sofi: 'Siesta nunca ha tenido advertencias para reiniciar.'
     not_digit: '¡El límite de advertencias deben ser dígitos!'
     #/warnmode
     same_mode: '¡Este es el modo actual! ¿Cómo puedo cambiarlo?'
@@ -165,16 +165,16 @@ STRINGS:
     emoji_not_allowed: "Lo siento, pero los roles de administrador no pueden contener emojis 😞"
   pm_menu:
     start_hi_group: '¡Hola! Mi nombre es Sophie'
-    start_hi: "¡Hola! ¡Mi nombre es <b>Daisy</b>, te ayudo a gestionar tu grupo de una manera eficiente!"
+    start_hi: "¡Hola! ¡Mi nombre es <b>Siesta</b>, te ayudo a gestionar tu grupo de una manera eficiente!"
     btn_source: "📜 Código fuente"
     btn_help: "❔ Ayuda"
     btn_lang: "es Idioma"
-    btn_channel: "📡 Noticias de Daisy"
-    btn_group: "👥 Daisy Support"
+    btn_channel: "📡 Noticias de Siesta"
+    btn_group: "👥 Siesta Support"
     btn_group_help: "Click me for help!"
     back: Atrás
     #/help
-    help_header: "¡Oye! Mi nombre es <b>Daisy</b>. Soy un robot de gestión de grupos, ¡estoy aquí para ayudarte a moverte y mantener el orden en tus grupos!\nTengo muchas funciones útiles, como control de flood, un sistema de advertencia, un sistema de notas e incluso respuestas predeterminadas a ciertas palabras clave."
+    help_header: "¡Oye! Mi nombre es <b>Siesta</b>. Soy un robot de gestión de grupos, ¡estoy aquí para ayudarte a moverte y mantener el orden en tus grupos!\nTengo muchas funciones útiles, como control de flood, un sistema de advertencia, un sistema de notas e incluso respuestas predeterminadas a ciertas palabras clave."
     click_btn: Haz clic aquí
   disable:
     #/disableable
@@ -488,31 +488,31 @@ STRINGS:
     big_file: '¡Sólo se admiten archivos menores de 50 MB!'
     started_importing: '¡Importación iniciada! Por favor espere...'
     bad_file: '¡Archivo erróneo! Se esperaba <code>columna ''general''</code>.'
-    file_version_so_new: '¡La versión del archivo exportado es más reciente de lo que Daisy admite actualmente!'
+    file_version_so_new: '¡La versión del archivo exportado es más reciente de lo que Siesta admite actualmente!'
     imports_locked: '¡Por favor, espere %s antes de usar la importación nuevamente!'
     import_done: '¡Importación hecha!'
   restrictions:
     user_not_in_chat: '¡El usuario no está en este chat!'
     #Kicks
-    kick_DaisyX: En lugar de intentar eliminarme, podrías pasar mejor tu tiempo. Eso es simplemente aburrido.
+    kick_Siesta: En lugar de intentar eliminarme, podrías pasar mejor tu tiempo. Eso es simplemente aburrido.
     kick_admin: Expulsar a los administradores no es la mejor idea.
     kick_self: Si quieres expulsarte a ti mismo - solo abandona este chat. Prefiero no verlo que mirar estos patéticos intentos de auto-castigo.
     user_kicked: "{user} fue expulsado por {admin} en {chat_name}."
     #Mutes
-    mute_DaisyX: En realidad, estaré encantado de callarte en su lugar.
+    mute_Siesta: En realidad, estaré encantado de callarte en su lugar.
     mute_admin: '¡Si crees que puedes silenciar a un administrador, te equivocas!'
     mute_self: '¡Si quieres silenciarte a ti mismo - solo deja de hablar! Es mejor pensar como un idiota que abrir la boca y eliminar todas las dudas.'
     user_muted: "{user} fue silenciado por {admin} en {chat_name}."
-    unmute_DaisyX: De hecho, no estoy silenciado.
+    unmute_Siesta: De hecho, no estoy silenciado.
     unmute_admin: Haha no, ¡intenta silenciarlo primero!
     unmute_self: '¿Debería silenciarte por primera vez?'
     user_unmuted: "{user} fue desmuteado por {admin} en {chat_name}."
     #Bans
-    ban_DaisyX: '¡No, no voy a hacer eso! ¡Pídele al creador del chat que lo haga!'
+    ban_Siesta: '¡No, no voy a hacer eso! ¡Pídele al creador del chat que lo haga!'
     ban_admin: Jajaja, vamos a ejecutar <code>/demote</code> a él primero.
     ban_self: '¿Por qué intentas banearte a ti mismo?'
     user_banned: "{user} fue baneado por {admin} en {chat_name}."
-    unban_DaisyX: De hecho, no estoy prohibido.
+    unban_Siesta: De hecho, no estoy prohibido.
     unban_admin: Haha no, ¡intenta banearlo primero!
     unban_self: '¿Debería banearte por primera vez?'
     user_unband: "{user} fue desbaneado por {admin} en {chat_name}."
@@ -554,7 +554,7 @@ STRINGS:
   #success_remove_rules_note: "Successfully removed rules note in <b>{}</b>."
   greetings:
     default_welcome: "Welcome {mention}! How are you?"
-    thank_for_add: "Thanks for adding me to your group! Take a look at /help and follow my news channel @DaisyXUpdates."
+    thank_for_add: "Thanks for adding me to your group! Take a look at /help and follow my news channel @HayakaRyuUpdates."
     default_security_note: "¡Bienvenido/a {mention}! ¡Por favor, haz clic en el botón de abajo para verificar que eres un ser humano!"
     bool_invalid_arg: Argumento inválido, se esperaba <code>on</code>/<code>off</code>.
     #/setwelcome
