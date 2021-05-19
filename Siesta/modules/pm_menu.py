@@ -82,13 +82,13 @@ async def get_start_func(message, strings, edit=False):
     )
     buttons.add(
         InlineKeyboardButton(
-            strings["btn_channel"], url="https://t.me/HayakaRyupdates"
+            strings["btn_channel"], url="https://t.me/HayakaRyuUpdates"
         ),
         InlineKeyboardButton(strings["btn_group"], url="https://t.me/SiestaSupport"),
     )
     buttons.add(
         InlineKeyboardButton(
-            "👸🏼 Add Siesta to your group",
+            "Add Siesta to your group",
             url=f"https://telegram.me/siestarobot?startgroup=true",
         )
     )
